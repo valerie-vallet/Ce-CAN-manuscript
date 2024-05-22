@@ -1,0 +1,3094 @@
+
+  ========================================================================
+                license information 
+ Customer : 200000000019588
+ ID       : LKO2306259
+
+ License file is VALID, continuing with full version
+  ========================================================================
+
+   OpenMP run-time library returned nthreads =  8
+
+ dscf (u-0-12.local) : TURBOMOLE rev. V7-7-1 compiled 2 Jan 2023 at 20:18:50
+ Copyright (C) 2023 TURBOMOLE GmbH, Karlsruhe
+
+
+    2024-03-29 11:59:06.513 
+
+
+
+                             d s c f - program
+
+                   idea & directorship : reinhart ahlrichs
+                   program development : marco haeser
+                                         michael baer
+                           dft version : oliver treutler
+
+
+                          quantum chemistry group
+                          universitaet  karlsruhe
+                                  germany
+
+
+
+   *-----------------------------------------------------------------------*
+   |                     program will use  8 thread(s)                     |
+   *-----------------------------------------------------------------------*
+
+
+              +--------------------------------------------------+
+              | Atomic coordinate, charge and isotop information |
+              +--------------------------------------------------+
+
+                    atomic coordinates            atom    charge  isotop
+          0.17429511    0.45398969   -0.54597022    o      8.000     0
+         -4.14856300   -0.02393149    0.05495513    ce    58.000     0
+         -4.14899764   -1.89918987    4.39833567    o      8.000     0
+         -3.53371037    3.23808162    3.53370471    o      8.000     0
+         -3.79653726    5.17246953    2.16344917    n      7.000     0
+         -4.24422283    4.77570074   -0.14468688    o      8.000     0
+         -8.55560464    1.36654033    1.48566111    o      8.000     0
+         -9.69588428   -0.63645598    0.87653057    n      7.000     0
+         -8.37890202   -2.36758684   -0.10307133    o      8.000     0
+         -3.13749150   -4.71624429    0.10936790    o      8.000     0
+         -3.30532374   -5.07226491   -2.24607178    n      7.000     0
+         -2.94012094   -7.12003450   -3.17761983    o      8.000     0
+         -3.87844366   -3.16904048   -3.56186540    o      8.000     0
+         -5.87895687    1.65687596   -4.01749349    o      8.000     0
+         -3.63083663    7.28172325    3.01391853    o      8.000     0
+        -11.93998507   -0.88935803    1.21824407    o      8.000     0
+          1.85518760    0.88039128   -1.13324608    h      1.000     0
+         -6.35752245    3.37853362   -4.35821867    h      1.000     0
+         -6.22017338    0.69813286   -5.52506408    h      1.000     0
+         -4.06891105   -0.96861692    5.96004313    h      1.000     0
+         -3.96098312   -3.66126689    4.81398471    h      1.000     0
+          0.09785002   -0.61088232    0.93417477    h      1.000     0
+ 
+       center of nuclear mass  :   -4.72626629   -0.08776491    0.14428151
+       center of nuclear charge:   -4.73811735   -0.09134715    0.14974931
+
+              +--------------------------------------------------+
+              |               basis set information              |
+              +--------------------------------------------------+
+
+              we will work with the 1s 3p 5d 7f 9g ... basis set
+              ...i.e. with spherical basis functions...
+
+   type   atoms  prim   cont   basis
+   ---------------------------------------------------------------------------
+    o       12     34     19   def-TZVP   [5s3p1d|11s6p1d]
+    ce       1    168     96   def-TZVP   [10s8p5d4f1g|14s13p10d8f1g]
+    n        3     34     19   def-TZVP   [5s3p1d|11s6p1d]
+    h        6      8      6   def-TZVP   [3s1p|5s1p]
+   ---------------------------------------------------------------------------
+   total:   22    726    417
+   ---------------------------------------------------------------------------
+
+   total number of primitive shells          :   88
+   total number of contracted shells         :  187
+   total number of cartesian basis functions :  455
+   total number of SCF-basis functions       :  417
+
+  number of unique ecp types :    1
+
+ integral neglect threshold       :  0.73E-11
+ integral storage threshold THIZE :  0.10E-04
+ integral storage threshold THIME :         5
+
+
+ symmetry group of the molecule :   c1 
+
+ the group has the following generators :
+   c1(z)
+
+    1 symmetry operations found
+
+ there are 1 real representations :   a   
+
+ maximum number of shells which are related by symmetry :  1
+
+  
+           ------------------
+           density functional
+           ------------------
+ B-P86 functional
+ exchange:    LDA + Becke (B88)
+ correlation: LDA (VWN) + Perdew (P86)
+ iterations will be done with small grid
+  
+ spherical integration : Lebedev's spherical grid
+ spherical gridsize    :                     4
+    i.e. gridpoints    :                   434
+  maximum batchsize    :                   100
+ value for diffuse not defined
+ radial integration    : Chebyshev 2nd kind (scaling 3)
+ radial gridsize       :                     6
+ integration cells     :                    22
+ partition function    : becke
+ partition sharpness   :                     3
+  
+
+          ------------------------
+          nuclear repulsion energy  :   1813.24051555    
+          ------------------------
+
+
+         -----------------
+         -S,T+V- integrals
+         -----------------
+
+ 1e-integrals will be neglected if expon. factor < 0.734497E-12
+
+
+          ----------------
+          -ecp-  integrals
+          ----------------
+ 
+ Difference densities algorithm switched on.
+ The maximal number of linear combinations of
+ difference densities is  20.
+
+ DIIS switched on: error vector is FDS-SDF
+ Max. Iterations for DIIS is     :   4
+ DIIS matrix (see manual) 
+    Scaling factor of diagonals  :  1.200
+    threshold for scaling factor :  0.000
+
+ scf convergence criterion : increment of total energy < .1000000D-06
+                  and increment of one-electron energy < .1000000D-03
+
+ MOs are in ASCII format !
+
+
+    mo occupation :
+   irrep   mo's   occupied
+    a      417       77
+ 
+ number of basis functions   :   417
+ number of occupied orbitals :    77
+ 
+
+ reading orbital data $uhfmo_alpha  from file alpha
+ orbital characterization : scfconv=7
+
+ reading orbital data $uhfmo_beta  from file beta
+ orbital characterization : scfconv=7
+ mo-orthogonalization by Cholesky decomposition
+ mo-orthogonalization by Cholesky decomposition
+
+ UHF mode switched on !
+
+ closed shell shift switched on 
+ all occupied orbitals are shifted by    0.05000
+
+
+ DSCF restart information will be dumped onto file alpha
+
+          Overall gridpoints after grid construction =         71476
+ 
+                                              current damping :  1.000
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+   1  -1546.0183903160    -5895.7591739     2536.5002680    0.000D+00 0.733D-11
+                             Na = 76.999997765          Nb = 76.000000223    
+                            Exc =  -156.526476835309     N = 152.99999799    
+          max. resid. norm for Fia-block=  1.024D-01 for orbital     12a    alpha
+          max. resid. fock norm         =  5.609D-01 for orbital    416a    beta 
+          Delta Eig. =    27.1337734797 eV 
+ 
+                                              current damping :  0.950
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+   2  -1546.1702647151    -5898.7939483     2539.3831680    0.393D+00 0.462D-11
+                             Na = 76.999981593          Nb = 75.999984537    
+                            Exc =  -156.621380875210     N = 152.99996613    
+          Norm of current diis error: 0.56680    
+          max. resid. norm for Fia-block=  5.477D-02 for orbital      1a    alpha
+          max. resid. fock norm         =  2.825D-01 for orbital    416a    beta 
+          Delta Eig. =    13.7595144269 eV 
+ 
+                                              current damping :  0.800
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+   3  -1546.2228744902    -5899.0582195     2539.5948294    0.132D+00 0.347D-11
+                             Na = 76.999968915          Nb = 75.999972573    
+                            Exc =  -156.617948154827     N = 152.99994149    
+          Norm of current diis error: 0.32260    
+          max. resid. norm for Fia-block=  2.996D-02 for orbital     51a    alpha
+          max. resid. fock norm         =  1.383D-01 for orbital    416a    beta 
+          Delta Eig. =     7.1894942181 eV 
+ 
+                                              current damping :  0.700
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+   4  -1546.2449049636    -5899.8454111     2540.3599906    0.101D+00 0.294D-11
+                             Na = 76.999959619          Nb = 75.999964176    
+                            Exc =  -156.585054887601     N = 152.99992380    
+          Norm of current diis error: 0.15987    
+          max. resid. norm for Fia-block=  1.651D-02 for orbital     77a    alpha
+          max. resid. fock norm         =  6.163D-02 for orbital    416a    beta 
+          Delta Eig. =     3.6490165824 eV 
+ 
+                                              current damping :  0.750
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+   5  -1546.2509879314    -5899.8293104     2540.3378069    0.427D-01 0.267D-11
+                             Na = 76.999953531          Nb = 75.999958969    
+                            Exc =  -156.612404772866     N = 152.99991250    
+          Norm of current diis error: 0.82303E-01
+          max. resid. norm for Fia-block=  8.905D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  2.547D-02 for orbital    416a    beta 
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     1.5072923225 eV 
+ 
+                                              current damping :  0.800
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+   6  -1546.2526747868    -5900.3501702     2540.8569799    0.352D-01 0.255D-11
+                             Na = 76.999950388          Nb = 75.999956598    
+                            Exc =  -156.607385309179     N = 152.99990699    
+          Norm of current diis error: 0.49173E-01
+          max. resid. norm for Fia-block=  5.902D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.098D-02 for orbital    416a    alpha
+          Delta Eig. =     0.6342140555 eV 
+ 
+                                              current damping :  0.850
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+   7  -1546.2534178471    -5900.1460275     2540.6520941    0.171D-01 0.245D-11
+                             Na = 76.999948661          Nb = 75.999955541    
+                            Exc =  -156.599986088306     N = 152.99990420    
+          Norm of current diis error: 0.20568E-01
+          max. resid. norm for Fia-block=  4.047D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  4.945D-03 for orbital    416a    alpha
+          Delta Eig. =     0.2700695353 eV 
+ 
+                                              current damping :  0.900
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+   8  -1546.2536753919    -5900.1632887     2540.6690978    0.608D-02 0.235D-11
+                             Na = 76.999947636          Nb = 75.999955068    
+                            Exc =  -156.602107711415     N = 152.99990270    
+          Norm of current diis error: 0.14115E-01
+          max. resid. norm for Fia-block=  3.770D-03 for orbital     18a    beta 
+          max. resid. fock norm         =  3.829D-03 for orbital     18a    beta 
+          Delta Eig. =     0.1121111216 eV 
+ 
+                                              current damping :  0.750
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+   9  -1546.2538647819    -5900.1981249     2540.7037445    0.464D-02 0.224D-11
+                             Na = 76.999946989          Nb = 75.999954866    
+                            Exc =  -156.601734931256     N = 152.99990186    
+          Norm of current diis error: 0.12582E-01
+          max. resid. norm for Fia-block=  3.592D-03 for orbital     18a    beta 
+          max. resid. fock norm         =  3.643D-03 for orbital     18a    beta 
+          Delta Eig. =     0.0913828257 eV 
+ 
+                                              current damping :  0.800
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  10  -1546.2540487782    -5900.1811360     2540.6865716    0.285D-02 0.209D-11
+                             Na = 76.999946469          Nb = 75.999954786    
+                            Exc =  -156.600900579856     N = 152.99990126    
+          Norm of current diis error: 0.12373E-01
+          max. resid. norm for Fia-block=  3.121D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  3.160D-03 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0405718057 eV 
+ 
+                                              current damping :  0.650
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  11  -1546.2542154636    -5900.1755822     2540.6808511    0.170D-02 0.194D-11
+                             Na = 76.999946164          Nb = 75.999954803    
+                            Exc =  -156.600524927875     N = 152.99990097    
+          Norm of current diis error: 0.13077E-01
+          max. resid. norm for Fia-block=  2.664D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  2.674D-03 for orbital     77a    alpha
+          Delta Eig. =     0.0203728193 eV 
+ 
+                                              current damping :  0.700
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  12  -1546.2543683672    -5900.1783948     2540.6835109    0.140D-02 0.181D-11
+                             Na = 76.999945893          Nb = 75.999954795    
+                            Exc =  -156.600197161009     N = 152.99990069    
+          Norm of current diis error: 0.17021E-01
+          max. resid. norm for Fia-block=  2.973D-03 for orbital     18a    beta 
+          max. resid. fock norm         =  3.218D-03 for orbital     20a    beta 
+          Delta Eig. =     0.0424795706 eV 
+ 
+                                              current damping :  0.750
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  13  -1546.2544363818    -5900.1717709     2540.6768190    0.269D-02 0.172D-11
+                             Na = 76.999945658          Nb = 75.999954711    
+                            Exc =  -156.599550384642     N = 152.99990037    
+          Norm of current diis error: 0.30447E-01
+          max. resid. norm for Fia-block=  2.254D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  2.259D-03 for orbital     77a    alpha
+          Delta Eig. =     0.0229637718 eV 
+ 
+                                              current damping :  0.800
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  14  -1546.2545400643    -5900.1719732     2540.6769176    0.129D-02 0.163D-11
+                             Na = 76.999945482          Nb = 75.999954710    
+                            Exc =  -156.599043056135     N = 152.99990019    
+          Norm of current diis error: 0.34503E-01
+          max. resid. norm for Fia-block=  2.144D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  2.151D-03 for orbital     77a    alpha
+          Delta Eig. =     0.0168840303 eV 
+ 
+                                              current damping :  0.650
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  15  -1546.2546335269    -5900.1767375     2540.6815885    0.209D-03 0.156D-11
+                             Na = 76.999945330          Nb = 75.999954705    
+                            Exc =  -156.598586154895     N = 152.99990004    
+          Norm of current diis error: 0.37818E-01
+          max. resid. norm for Fia-block=  2.039D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  2.067D-03 for orbital     80a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0217953170 eV 
+ 
+                                              current damping :  0.500
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  16  -1546.2547295397    -5900.1787080     2540.6834629    0.208D-03 0.149D-11
+                             Na = 76.999945218          Nb = 75.999954728    
+                            Exc =  -156.598155217341     N = 152.99989995    
+          Norm of current diis error: 0.40173E-01
+          max. resid. norm for Fia-block=  3.265D-03 for orbital     18a    beta 
+          max. resid. fock norm         =  3.726D-03 for orbital     20a    beta 
+          Delta Eig. =     0.0546581400 eV 
+ 
+                                              current damping :  0.350
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  17  -1546.2548415609    -5900.1942651     2540.6989080    0.131D-02 0.143D-11
+                             Na = 76.999945298          Nb = 75.999954884    
+                            Exc =  -156.598626652152     N = 152.99990018    
+          Norm of current diis error: 0.35254E-01
+          max. resid. norm for Fia-block=  7.622D-03 for orbital     18a    beta 
+          max. resid. fock norm         =  8.718D-03 for orbital     20a    beta 
+          Delta Eig. =     0.1862119808 eV 
+ 
+                                              current damping :  0.400
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  18  -1546.2550082772    -5900.0935808     2540.5980569    0.164D-02 0.134D-11
+                             Na = 76.999945505          Nb = 75.999955141    
+                            Exc =  -156.598935951485     N = 152.99990065    
+          Norm of current diis error: 0.24798E-01
+          max. resid. norm for Fia-block=  4.249D-03 for orbital     18a    beta 
+          max. resid. fock norm         =  4.776D-03 for orbital     20a    beta 
+          Delta Eig. =     0.1229309050 eV 
+ 
+                                              current damping :  0.450
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  19  -1546.2551682519    -5900.2691124     2540.7734286    0.204D-02 0.126D-11
+                             Na = 76.999945348          Nb = 75.999955049    
+                            Exc =  -156.599350592229     N = 152.99990040    
+          Norm of current diis error: 0.25229E-01
+          max. resid. norm for Fia-block=  2.924D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  3.092D-03 for orbital     20a    beta 
+          Delta Eig. =     0.0651897667 eV 
+ 
+                                              current damping :  0.500
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  20  -1546.2554138142    -5900.1547399     2540.6588105    0.152D-02 0.119D-11
+                             Na = 76.999945344          Nb = 75.999955097    
+                            Exc =  -156.598717148537     N = 152.99990044    
+          Norm of current diis error: 0.14072E-01
+          max. resid. norm for Fia-block=  3.774D-03 for orbital     18a    beta 
+          max. resid. fock norm         =  4.334D-03 for orbital     20a    beta 
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.1233648381 eV 
+ 
+                                              current damping :  0.550
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  21  -1546.2555861854    -5900.1887204     2540.6926187    0.124D-02 0.113D-11
+                             Na = 76.999945473          Nb = 75.999955172    
+                            Exc =  -156.598819962227     N = 152.99990064    
+          Norm of current diis error: 0.11234E-01
+          max. resid. norm for Fia-block=  3.285D-03 for orbital     18a    beta 
+          max. resid. fock norm         =  3.827D-03 for orbital     20a    beta 
+          Delta Eig. =     0.0835046282 eV 
+ 
+                                              current damping :  0.600
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  22  -1546.2557353401    -5900.1249351     2540.6286842    0.124D-02 0.733D-11
+                             Na = 76.999945435          Nb = 75.999955131    
+                            Exc =  -156.599194185151     N = 152.99990057    
+          Norm of current diis error: 0.10542E-01
+          max. resid. norm for Fia-block=  2.702D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  2.773D-03 for orbital     77a    alpha
+          Delta Eig. =     0.0645592383 eV 
+ 
+                                              current damping :  0.650
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  23  -1546.2558669498    -5900.1672783     2540.6708958    0.212D-01 0.465D-11
+                             Na = 76.999945536          Nb = 75.999955170    
+                            Exc =  -156.598749795110     N = 152.99990071    
+          Norm of current diis error: 0.10685E-01
+          max. resid. norm for Fia-block=  2.624D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  2.827D-03 for orbital     16a    beta 
+          Delta Eig. =     0.0536576006 eV 
+ 
+                                              current damping :  0.500
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  24  -1546.2559844568    -5900.1807751     2540.6842751    0.413D-02 0.315D-11
+                             Na = 76.999945560          Nb = 75.999955134    
+                            Exc =  -156.598968052298     N = 152.99990069    
+          Norm of current diis error: 0.10411E-01
+          max. resid. norm for Fia-block=  2.125D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  2.150D-03 for orbital     77a    alpha
+          Delta Eig. =     0.0171152300 eV 
+ 
+                                              current damping :  0.550
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  25  -1546.2560839636    -5900.1673153     2540.6707158    0.332D-02 0.254D-11
+                             Na = 76.999945630          Nb = 75.999955153    
+                            Exc =  -156.599049252028     N = 152.99990078    
+          Norm of current diis error: 0.13379E-01
+          max. resid. norm for Fia-block=  1.664D-03 for orbital     17a    beta 
+          max. resid. fock norm         =  1.931D-03 for orbital     16a    beta 
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0360875235 eV 
+ 
+                                              current damping :  0.600
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  26  -1546.2561225765    -5900.1716838     2540.6750457    0.282D-02 0.230D-11
+                             Na = 76.999945695          Nb = 75.999955182    
+                            Exc =  -156.599145931500     N = 152.99990088    
+          Norm of current diis error: 0.23608E-01
+          max. resid. norm for Fia-block=  1.582D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.593D-03 for orbital     77a    alpha
+          Delta Eig. =     0.0188493343 eV 
+ 
+                                              current damping :  0.650
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  27  -1546.2561737873    -5900.1383136     2540.6416243    0.940D-03 0.207D-11
+                             Na = 76.999945712          Nb = 75.999955163    
+                            Exc =  -156.599417442333     N = 152.99990088    
+          Norm of current diis error: 0.27140E-01
+          max. resid. norm for Fia-block=  1.545D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.679D-03 for orbital     16a    beta 
+          Delta Eig. =     0.0343844370 eV 
+ 
+                                              current damping :  0.500
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  28  -1546.2562184583    -5900.0994549     2540.6027209    0.682D-03 0.191D-11
+                             Na = 76.999945725          Nb = 75.999955147    
+                            Exc =  -156.599546316015     N = 152.99990087    
+          Norm of current diis error: 0.28875E-01
+          max. resid. norm for Fia-block=  1.584D-03 for orbital     17a    beta 
+          max. resid. fock norm         =  1.825D-03 for orbital     16a    beta 
+          Delta Eig. =     0.0337614087 eV 
+ 
+                                              current damping :  0.350
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  29  -1546.2562851390    -5900.0911448     2540.5943442    0.742D-03 0.178D-11
+                             Na = 76.999945693          Nb = 75.999955079    
+                            Exc =  -156.599706791110     N = 152.99990077    
+          Norm of current diis error: 0.27732E-01
+          max. resid. norm for Fia-block=  3.868D-03 for orbital     17a    beta 
+          max. resid. fock norm         =  4.604D-03 for orbital     16a    beta 
+          Delta Eig. =     0.0733309189 eV 
+ 
+                                              current damping :  0.400
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  30  -1546.2563856347    -5900.1858175     2540.6889163    0.173D-02 0.155D-11
+                             Na = 76.999945727          Nb = 75.999955037    
+                            Exc =  -156.599583997274     N = 152.99990076    
+          Norm of current diis error: 0.17042E-01
+          max. resid. norm for Fia-block=  3.226D-03 for orbital     17a    beta 
+          max. resid. fock norm         =  3.815D-03 for orbital     16a    beta 
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0756899081 eV 
+ 
+                                              current damping :  0.450
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  31  -1546.2564504748    -5900.1106956     2540.6137296    0.391D-02 0.147D-11
+                             Na = 76.999945827          Nb = 75.999955049    
+                            Exc =  -156.598988089172     N = 152.99990088    
+          Norm of current diis error: 0.17595E-01
+          max. resid. norm for Fia-block=  2.243D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  2.499D-03 for orbital    414a    alpha
+          Delta Eig. =     0.0544033519 eV 
+ 
+                                              current damping :  0.500
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  32  -1546.2565748014    -5900.1475950     2540.6505047    0.231D-02 0.131D-11
+                             Na = 76.999945768          Nb = 75.999954948    
+                            Exc =  -156.599722744515     N = 152.99990072    
+          Norm of current diis error: 0.88173E-02
+          max. resid. norm for Fia-block=  2.408D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  2.547D-03 for orbital    414a    alpha
+          Delta Eig. =     0.0380955357 eV 
+ 
+                                              current damping :  0.350
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  33  -1546.2566665827    -5900.1730323     2540.6758502    0.126D-02 0.119D-11
+                             Na = 76.999945831          Nb = 75.999954974    
+                            Exc =  -156.599486729767     N = 152.99990080    
+          Norm of current diis error: 0.77376E-02
+          max. resid. norm for Fia-block=  2.345D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  2.430D-03 for orbital     77a    alpha
+          Delta Eig. =     0.0347949444 eV 
+ 
+                                              current damping :  0.400
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  34  -1546.2567660966    -5900.1691040     2540.6718223    0.138D-02 0.111D-11
+                             Na = 76.999945787          Nb = 75.999954888    
+                            Exc =  -156.599541959558     N = 152.99990067    
+          Norm of current diis error: 0.66123E-02
+          max. resid. norm for Fia-block=  2.248D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  2.296D-03 for orbital     77a    alpha
+          Delta Eig. =     0.0377085503 eV 
+ 
+                                              current damping :  0.250
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  35  -1546.2568582522    -5900.1561172     2540.6587434    0.123D-02 0.105D-11
+                             Na = 76.999945777          Nb = 75.999954864    
+                            Exc =  -156.599796297888     N = 152.99990064    
+          Norm of current diis error: 0.66518E-02
+          max. resid. norm for Fia-block=  2.325D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  2.381D-03 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0343590336 eV 
+ 
+                                              current damping :  0.300
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  36  -1546.2569639565    -5900.1721731     2540.6746936    0.856D-03 0.998D-12
+                             Na = 76.999945794          Nb = 75.999954845    
+                            Exc =  -156.599604939703     N = 152.99990064    
+          Norm of current diis error: 0.62121E-02
+          max. resid. norm for Fia-block=  1.952D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.967D-03 for orbital     77a    alpha
+          Delta Eig. =     0.0265906091 eV 
+ 
+                                              current damping :  0.350
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  37  -1546.2570496558    -5900.1713789     2540.6738137    0.382D-03 0.963D-12
+                             Na = 76.999945765          Nb = 75.999954803    
+                            Exc =  -156.599801756883     N = 152.99990057    
+          Norm of current diis error: 0.77533E-02
+          max. resid. norm for Fia-block=  1.327D-03 for orbital     18a    beta 
+          max. resid. fock norm         =  1.688D-03 for orbital    414a    alpha
+          Delta Eig. =     0.0350389977 eV 
+ 
+                                              current damping :  0.400
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  38  -1546.2570679095    -5900.1866986     2540.6891151    0.109D-02 0.951D-12
+                             Na = 76.999945806          Nb = 75.999954830    
+                            Exc =  -156.599901175589     N = 152.99990064    
+          Norm of current diis error: 0.14953E-01
+          max. resid. norm for Fia-block=  1.183D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.189D-03 for orbital     77a    alpha
+          Delta Eig. =     0.0116758799 eV 
+ 
+                                              current damping :  0.250
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  39  -1546.2571097181    -5900.2049610     2540.7073357    0.474D-03 0.934D-12
+                             Na = 76.999945829          Nb = 75.999954823    
+                            Exc =  -156.599921105574     N = 152.99990065    
+          Norm of current diis error: 0.16701E-01
+          max. resid. norm for Fia-block=  1.250D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.271D-03 for orbital     77a    alpha
+          Delta Eig. =     0.0226478141 eV 
+ 
+                                              current damping :  0.100
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  40  -1546.2571622582    -5900.2099043     2540.7122265    0.370D-02 0.925D-12
+                             Na = 76.999945832          Nb = 75.999954797    
+                            Exc =  -156.600045209148     N = 152.99990063    
+          Norm of current diis error: 0.17369E-01
+          max. resid. norm for Fia-block=  1.196D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.217D-03 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0198482346 eV 
+ 
+                                              current damping :  0.100
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  41  -1546.2572210650    -5900.2208211     2540.7230845    0.298D-03 0.926D-12
+                             Na = 76.999945891          Nb = 75.999954815    
+                            Exc =  -156.599856895673     N = 152.99990071    
+          Norm of current diis error: 0.17782E-01
+          max. resid. norm for Fia-block=  2.096D-03 for orbital     19a    beta 
+          max. resid. fock norm         =  2.476D-03 for orbital     16a    beta 
+          Delta Eig. =     0.0751904180 eV 
+ 
+                                              current damping :  0.150
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  42  -1546.2572891587    -5900.1300186     2540.6322139    0.906D-03 0.936D-12
+                             Na = 76.999945830          Nb = 75.999954740    
+                            Exc =  -156.599848376503     N = 152.99990057    
+          Norm of current diis error: 0.13208E-01
+          max. resid. norm for Fia-block=  1.948D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  2.295D-03 for orbital    400a    beta 
+          Delta Eig. =     0.0776933448 eV 
+ 
+                                              current damping :  0.200
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  43  -1546.2573645844    -5900.2433398     2540.7454597    0.906D-03 0.733D-11
+                             Na = 76.999945798          Nb = 75.999954658    
+                            Exc =  -156.599686210917     N = 152.99990046    
+          Norm of current diis error: 0.15116E-01
+          max. resid. norm for Fia-block=  2.295D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  2.311D-03 for orbital     77a    alpha
+          Delta Eig. =     0.0614536947 eV 
+ 
+                                              current damping :  0.250
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  44  -1546.2574957552    -5900.1863563     2540.6883450    0.195D-01 0.465D-11
+                             Na = 76.999945835          Nb = 75.999954657    
+                            Exc =  -156.599892865675     N = 152.99990049    
+          Norm of current diis error: 0.68210E-02
+          max. resid. norm for Fia-block=  2.705D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  2.739D-03 for orbital     77a    alpha
+          Delta Eig. =     0.0723530085 eV 
+ 
+                                              current damping :  0.100
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  45  -1546.2576070303    -5900.1765946     2540.6784720    0.679D-02 0.307D-11
+                             Na = 76.999945908          Nb = 75.999954693    
+                            Exc =  -156.599796013957     N = 152.99990060    
+          Norm of current diis error: 0.73103E-02
+          max. resid. norm for Fia-block=  2.120D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  2.134D-03 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0414615914 eV 
+ 
+                                              current damping :  0.100
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  46  -1546.2577088973    -5900.1624180     2540.6641935    0.567D-02 0.248D-11
+                             Na = 76.999945796          Nb = 75.999954531    
+                            Exc =  -156.599823230397     N = 152.99990033    
+          Norm of current diis error: 0.78797E-02
+          max. resid. norm for Fia-block=  1.711D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.718D-03 for orbital     77a    alpha
+          Delta Eig. =     0.0263383533 eV 
+ 
+                                              current damping :  0.150
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  47  -1546.2577925653    -5900.1960510     2540.6977429    0.288D-02 0.219D-11
+                             Na = 76.999945895          Nb = 75.999954571    
+                            Exc =  -156.599815485747     N = 152.99990047    
+          Norm of current diis error: 0.75682E-02
+          max. resid. norm for Fia-block=  7.866D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  7.951D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0195504755 eV 
+ 
+                                              current damping :  0.100
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  48  -1546.2578209092    -5900.2080675     2540.7097310    0.194D-02 0.209D-11
+                             Na = 76.999945924          Nb = 75.999954568    
+                            Exc =  -156.599874805554     N = 152.99990049    
+          Norm of current diis error: 0.11190E-01
+          max. resid. norm for Fia-block=  9.551D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  9.574D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0162810135 eV 
+ 
+                                              current damping :  0.100
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  49  -1546.2578576085    -5900.2298182     2540.7314451    0.708D-03 0.198D-11
+                             Na = 76.999945961          Nb = 75.999954557    
+                            Exc =  -156.599943089659     N = 152.99990052    
+          Norm of current diis error: 0.13257E-01
+          max. resid. norm for Fia-block=  1.205D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.228D-03 for orbital     77a    alpha
+          Delta Eig. =     0.0469839132 eV 
+ 
+                                              current damping :  0.100
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  50  -1546.2579059688    -5900.2302161     2540.7317946    0.197D-02 0.188D-11
+                             Na = 76.999946091          Nb = 75.999954650    
+                            Exc =  -156.600002694058     N = 152.99990074    
+          Norm of current diis error: 0.13802E-01
+          max. resid. norm for Fia-block=  1.075D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.094D-03 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0398818896 eV 
+ 
+                                              current damping :  0.150
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  51  -1546.2579626146    -5900.1832958     2540.6848176    0.435D-03 0.181D-11
+                             Na = 76.999946046          Nb = 75.999954582    
+                            Exc =  -156.600040075190     N = 152.99990063    
+          Norm of current diis error: 0.11238E-01
+          max. resid. norm for Fia-block=  1.883D-03 for orbital     18a    beta 
+          max. resid. fock norm         =  2.878D-03 for orbital    414a    alpha
+          Delta Eig. =     0.0620379624 eV 
+ 
+                                              current damping :  0.200
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  52  -1546.2580331942    -5900.1874079     2540.6888592    0.208D-02 0.170D-11
+                             Na = 76.999946020          Nb = 75.999954487    
+                            Exc =  -156.599721425569     N = 152.99990051    
+          Norm of current diis error: 0.85985E-02
+          max. resid. norm for Fia-block=  1.994D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  2.320D-03 for orbital    414a    alpha
+          Delta Eig. =     0.0593448108 eV 
+ 
+                                              current damping :  0.100
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  53  -1546.2581045159    -5900.1941142     2540.6954942    0.119D-02 0.162D-11
+                             Na = 76.999946055          Nb = 75.999954474    
+                            Exc =  -156.599788686149     N = 152.99990053    
+          Norm of current diis error: 0.92294E-02
+          max. resid. norm for Fia-block=  1.847D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.852D-03 for orbital     77a    alpha
+          Delta Eig. =     0.0552155995 eV 
+ 
+                                              current damping :  0.150
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  54  -1546.2581845412    -5900.1792630     2540.6805629    0.137D-02 0.152D-11
+                             Na = 76.999946185          Nb = 75.999954553    
+                            Exc =  -156.599968916629     N = 152.99990074    
+          Norm of current diis error: 0.70913E-02
+          max. resid. norm for Fia-block=  1.813D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.829D-03 for orbital    414a    alpha
+          Delta Eig. =     0.0368600273 eV 
+ 
+                                              current damping :  0.200
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  55  -1546.2582535354    -5900.1904153     2540.6916462    0.387D-03 0.144D-11
+                             Na = 76.999946129          Nb = 75.999954431    
+                            Exc =  -156.599837924112     N = 152.99990056    
+          Norm of current diis error: 0.59805E-02
+          max. resid. norm for Fia-block=  1.337D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.348D-03 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0192273833 eV 
+ 
+                                              current damping :  0.100
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  56  -1546.2583005780    -5900.1929589     2540.6941428    0.449D-03 0.140D-11
+                             Na = 76.999946208          Nb = 75.999954463    
+                            Exc =  -156.599769314190     N = 152.99990067    
+          Norm of current diis error: 0.57459E-02
+          max. resid. norm for Fia-block=  1.467D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.632D-03 for orbital    414a    alpha
+          Delta Eig. =     0.0454553897 eV 
+ 
+                                              current damping :  0.150
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  57  -1546.2583533192    -5900.1886917     2540.6898229    0.370D-03 0.134D-11
+                             Na = 76.999946230          Nb = 75.999954436    
+                            Exc =  -156.599828710657     N = 152.99990067    
+          Norm of current diis error: 0.52887E-02
+          max. resid. norm for Fia-block=  2.023D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  2.847D-03 for orbital    414a    alpha
+          Delta Eig. =     0.0627676071 eV 
+ 
+                                              current damping :  0.200
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  58  -1546.2584167540    -5900.1984209     2540.6994886    0.522D-03 0.129D-11
+                             Na = 76.999946300          Nb = 75.999954441    
+                            Exc =  -156.599695814897     N = 152.99990074    
+          Norm of current diis error: 0.52007E-02
+          max. resid. norm for Fia-block=  1.450D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.454D-03 for orbital     77a    alpha
+          Delta Eig. =     0.0274879219 eV 
+ 
+                                              current damping :  0.250
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  59  -1546.2584613932    -5900.1882974     2540.6893204    0.232D-03 0.124D-11
+                             Na = 76.999946318          Nb = 75.999954416    
+                            Exc =  -156.599843833811     N = 152.99990073    
+          Norm of current diis error: 0.55349E-02
+          max. resid. norm for Fia-block=  2.259D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  3.263D-03 for orbital    414a    alpha
+          Delta Eig. =     0.0664199136 eV 
+ 
+                                              current damping :  0.300
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  60  -1546.2585238680    -5900.1920345     2540.6929951    0.234D-03 0.120D-11
+                             Na = 76.999946365          Nb = 75.999954402    
+                            Exc =  -156.599799959456     N = 152.99990077    
+          Norm of current diis error: 0.33366E-02
+          max. resid. norm for Fia-block=  2.409D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  3.077D-03 for orbital    414a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0632988875 eV 
+ 
+                                              current damping :  0.150
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  61  -1546.2585829865    -5900.1946221     2540.6955235    0.242D-03 0.115D-11
+                             Na = 76.999946436          Nb = 75.999954409    
+                            Exc =  -156.599687725516     N = 152.99990084    
+          Norm of current diis error: 0.31542E-02
+          max. resid. norm for Fia-block=  1.561D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.564D-03 for orbital     77a    alpha
+          Delta Eig. =     0.0167332848 eV 
+ 
+                                              current damping :  0.100
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  62  -1546.2586255866    -5900.1981317     2540.6989906    0.472D-03 0.112D-11
+                             Na = 76.999946446          Nb = 75.999954379    
+                            Exc =  -156.599851632605     N = 152.99990082    
+          Norm of current diis error: 0.39150E-02
+          max. resid. norm for Fia-block=  1.245D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.248D-03 for orbital     77a    alpha
+          Delta Eig. =     0.0179880882 eV 
+ 
+                                              current damping :  0.150
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  63  -1546.2586600920    -5900.1916971     2540.6925214    0.253D-03 0.109D-11
+                             Na = 76.999946495          Nb = 75.999954387    
+                            Exc =  -156.599799137513     N = 152.99990088    
+          Norm of current diis error: 0.39134E-02
+          max. resid. norm for Fia-block=  4.753D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  8.890D-04 for orbital    414a    alpha
+          Delta Eig. =     0.0158630613 eV 
+ 
+                                              current damping :  0.200
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  64  -1546.2586699231    -5900.1949078     2540.6957223    0.253D-03 0.733D-11
+                             Na = 76.999946517          Nb = 75.999954388    
+                            Exc =  -156.599798806133     N = 152.99990091    
+          Norm of current diis error: 0.56506E-02
+          max. resid. norm for Fia-block=  3.984D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.987D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0036494362 eV 
+ 
+                                              current damping :  0.100
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  65  -1546.2586786891    -5900.1964528     2540.6972585    0.324D-02 0.465D-11
+                             Na = 76.999946542          Nb = 75.999954392    
+                            Exc =  -156.599785903875     N = 152.99990093    
+          Norm of current diis error: 0.64313E-02
+          max. resid. norm for Fia-block=  7.622D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  1.290D-03 for orbital    414a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0330459021 eV 
+ 
+                                              current damping :  0.100
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  66  -1546.2586947549    -5900.1985279     2540.6993176    0.213D-02 0.262D-11
+                             Na = 76.999946605          Nb = 75.999954422    
+                            Exc =  -156.599580416648     N = 152.99990103    
+          Norm of current diis error: 0.69812E-02
+          max. resid. norm for Fia-block=  7.987D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  1.128D-03 for orbital    414a    alpha
+          Delta Eig. =     0.0226646379 eV 
+ 
+                                              current damping :  0.100
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  67  -1546.2587153550    -5900.2097355     2540.7105046    0.290D-02 0.205D-11
+                             Na = 76.999946593          Nb = 75.999954388    
+                            Exc =  -156.599682988544     N = 152.99990098    
+          Norm of current diis error: 0.57139E-02
+          max. resid. norm for Fia-block=  1.095D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.805D-03 for orbital    414a    alpha
+          Delta Eig. =     0.0302093651 eV 
+ 
+                                              current damping :  0.150
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  68  -1546.2587372508    -5900.1762693     2540.6770165    0.463D-02 0.172D-11
+                             Na = 76.999946593          Nb = 75.999954374    
+                            Exc =  -156.599813929983     N = 152.99990097    
+          Norm of current diis error: 0.64074E-02
+          max. resid. norm for Fia-block=  1.207D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.710D-03 for orbital    414a    alpha
+          Delta Eig. =     0.0285022452 eV 
+ 
+                                              current damping :  0.200
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  69  -1546.2587675903    -5900.1986725     2540.6993894    0.121D-02 0.152D-11
+                             Na = 76.999946611          Nb = 75.999954369    
+                            Exc =  -156.599698966405     N = 152.99990098    
+          Norm of current diis error: 0.32337E-02
+          max. resid. norm for Fia-block=  1.240D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.488D-03 for orbital    414a    alpha
+          Delta Eig. =     0.0185577897 eV 
+ 
+                                              current damping :  0.100
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  70  -1546.2587922382    -5900.2039254     2540.7046176    0.128D-02 0.139D-11
+                             Na = 76.999946657          Nb = 75.999954387    
+                            Exc =  -156.599606348074     N = 152.99990104    
+          Norm of current diis error: 0.29758E-02
+          max. resid. norm for Fia-block=  1.237D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.475D-03 for orbital    414a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0230308184 eV 
+ 
+                                              current damping :  0.150
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  71  -1546.2588178460    -5900.1941508     2540.6948175    0.715D-03 0.129D-11
+                             Na = 76.999946643          Nb = 75.999954365    
+                            Exc =  -156.599828158514     N = 152.99990101    
+          Norm of current diis error: 0.27092E-02
+          max. resid. norm for Fia-block=  9.946D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  9.985D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0116020322 eV 
+ 
+                                              current damping :  0.200
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  72  -1546.2588370066    -5900.1972027     2540.6978501    0.576D-03 0.124D-11
+                             Na = 76.999946682          Nb = 75.999954387    
+                            Exc =  -156.599578255595     N = 152.99990107    
+          Norm of current diis error: 0.25974E-02
+          max. resid. norm for Fia-block=  1.018D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.085D-03 for orbital    414a    alpha
+          Delta Eig. =     0.0071088669 eV 
+ 
+                                              current damping :  0.100
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  73  -1546.2588548582    -5900.2034043     2540.7040339    0.502D-03 0.119D-11
+                             Na = 76.999946671          Nb = 75.999954365    
+                            Exc =  -156.599657109839     N = 152.99990104    
+          Norm of current diis error: 0.24727E-02
+          max. resid. norm for Fia-block=  1.031D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.089D-03 for orbital    414a    alpha
+          Delta Eig. =     0.0142190707 eV 
+ 
+                                              current damping :  0.150
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  74  -1546.2588737023    -5900.1932331     2540.6938438    0.324D-03 0.115D-11
+                             Na = 76.999946701          Nb = 75.999954391    
+                            Exc =  -156.599705118022     N = 152.99990109    
+          Norm of current diis error: 0.23942E-02
+          max. resid. norm for Fia-block=  1.007D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.010D-03 for orbital     77a    alpha
+          Delta Eig. =     0.0143222088 eV 
+ 
+                                              current damping :  0.200
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  75  -1546.2588907676    -5900.2026180     2540.7032117    0.229D-03 0.112D-11
+                             Na = 76.999946691          Nb = 75.999954371    
+                            Exc =  -156.599549717829     N = 152.99990106    
+          Norm of current diis error: 0.22046E-02
+          max. resid. norm for Fia-block=  1.152D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.180D-03 for orbital    414a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0100989320 eV 
+ 
+                                              current damping :  0.250
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  76  -1546.2589085230    -5900.1966609     2540.6972369    0.237D-03 0.109D-11
+                             Na = 76.999946703          Nb = 75.999954382    
+                            Exc =  -156.599705623106     N = 152.99990108    
+          Norm of current diis error: 0.19552E-02
+          max. resid. norm for Fia-block=  1.104D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.107D-03 for orbital     77a    alpha
+          Delta Eig. =     0.0086708356 eV 
+ 
+                                              current damping :  0.300
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  77  -1546.2589243099    -5900.2004543     2540.7010144    0.231D-03 0.106D-11
+                             Na = 76.999946713          Nb = 75.999954395    
+                            Exc =  -156.599582992845     N = 152.99990111    
+          Norm of current diis error: 0.20160E-02
+          max. resid. norm for Fia-block=  8.922D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  8.934D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0079593442 eV 
+ 
+                                              current damping :  0.350
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  78  -1546.2589365510    -5900.1981079     2540.6986558    0.207D-03 0.105D-11
+                             Na = 76.999946693          Nb = 75.999954376    
+                            Exc =  -156.599556308718     N = 152.99990107    
+          Norm of current diis error: 0.18703E-02
+          max. resid. norm for Fia-block=  9.129D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  9.157D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0075239340 eV 
+ 
+                                              current damping :  0.400
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  79  -1546.2589480723    -5900.2009438     2540.7014802    0.103D-03 0.103D-11
+                             Na = 76.999946706          Nb = 75.999954393    
+                            Exc =  -156.599607811749     N = 152.99990110    
+          Norm of current diis error: 0.17487E-02
+          max. resid. norm for Fia-block=  6.813D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  6.821D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0042919357 eV 
+ 
+                                              current damping :  0.450
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  80  -1546.2589562931    -5900.1964599     2540.6969880    0.546D-04 0.102D-11
+                             Na = 76.999946693          Nb = 75.999954387    
+                            Exc =  -156.599556235280     N = 152.99990108    
+          Norm of current diis error: 0.18926E-02
+          max. resid. norm for Fia-block=  4.725D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.726D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0018682612 eV 
+ 
+                                              current damping :  0.500
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  81  -1546.2589617539    -5900.1974845     2540.6980072    0.836D-02 0.103D-11
+                             Na = 76.999946694          Nb = 75.999954392    
+                            Exc =  -156.599565392251     N = 152.99990109    
+          Norm of current diis error: 0.21059E-02
+          max. resid. norm for Fia-block=  2.790D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.792D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0015084956 eV 
+ 
+                                              current damping :  0.550
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  82  -1546.2589647424    -5900.1971375     2540.6976572    0.125D-03 0.114D-11
+                             Na = 76.999946699          Nb = 75.999954399    
+                            Exc =  -156.599556587621     N = 152.99990110    
+          Norm of current diis error: 0.24457E-02
+          max. resid. norm for Fia-block=  3.146D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.149D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0017163257 eV 
+ 
+                                              current damping :  0.400
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  83  -1546.2589679908    -5900.1968059     2540.6973224    0.159D-01 0.209D-11
+                             Na = 76.999946700          Nb = 75.999954402    
+                            Exc =  -156.599533179065     N = 152.99990110    
+          Norm of current diis error: 0.26092E-02
+          max. resid. norm for Fia-block=  4.274D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.294D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0061405738 eV 
+ 
+                                              current damping :  0.450
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  84  -1546.2589726356    -5900.2029415     2540.7034533    0.482D-04 0.203D-11
+                             Na = 76.999946711          Nb = 75.999954415    
+                            Exc =  -156.599542761781     N = 152.99990113    
+          Norm of current diis error: 0.26801E-02
+          max. resid. norm for Fia-block=  5.304D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  5.352D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0053859976 eV 
+ 
+                                              current damping :  0.500
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  85  -1546.2589784927    -5900.2002260     2540.7007320    0.482D-04 0.733D-11
+                             Na = 76.999946689          Nb = 75.999954397    
+                            Exc =  -156.599518205131     N = 152.99990109    
+          Norm of current diis error: 0.21664E-02
+          max. resid. norm for Fia-block=  9.182D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  9.243D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0088889411 eV 
+ 
+                                              current damping :  0.350
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  86  -1546.2589874325    -5900.1962935     2540.6967905    0.526D-02 0.465D-11
+                             Na = 76.999946696          Nb = 75.999954413    
+                            Exc =  -156.599558797684     N = 152.99990111    
+          Norm of current diis error: 0.20126E-02
+          max. resid. norm for Fia-block=  7.722D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  7.736D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0086851512 eV 
+ 
+                                              current damping :  0.400
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  87  -1546.2589961342    -5900.2001593     2540.7006476    0.160D-02 0.313D-11
+                             Na = 76.999946664          Nb = 75.999954393    
+                            Exc =  -156.599495633358     N = 152.99990106    
+          Norm of current diis error: 0.19881E-02
+          max. resid. norm for Fia-block=  7.559D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  7.570D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0053245510 eV 
+ 
+                                              current damping :  0.250
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  88  -1546.2590044684    -5900.2017103     2540.7021903    0.529D-03 0.254D-11
+                             Na = 76.999946676          Nb = 75.999954416    
+                            Exc =  -156.599492799435     N = 152.99990109    
+          Norm of current diis error: 0.16590E-02
+          max. resid. norm for Fia-block=  8.752D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  8.773D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0090756550 eV 
+ 
+                                              current damping :  0.300
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  89  -1546.2590147000    -5900.1943074     2540.6947772    0.704D-03 0.215D-11
+                             Na = 76.999946644          Nb = 75.999954402    
+                            Exc =  -156.599503922850     N = 152.99990105    
+          Norm of current diis error: 0.16854E-02
+          max. resid. norm for Fia-block=  5.678D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  5.681D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0053822575 eV 
+ 
+                                              current damping :  0.350
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  90  -1546.2590213702    -5900.2010368     2540.7014999    0.220D-03 0.196D-11
+                             Na = 76.999946652          Nb = 75.999954422    
+                            Exc =  -156.599470687933     N = 152.99990107    
+          Norm of current diis error: 0.16891E-02
+          max. resid. norm for Fia-block=  5.491D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  5.498D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0028726939 eV 
+ 
+                                              current damping :  0.400
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  91  -1546.2590274152    -5900.2000499     2540.7005070    0.760D-04 0.184D-11
+                             Na = 76.999946640          Nb = 75.999954422    
+                            Exc =  -156.599452043116     N = 152.99990106    
+          Norm of current diis error: 0.16864E-02
+          max. resid. norm for Fia-block=  3.412D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.413D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0004275459 eV 
+ 
+                                              current damping :  0.450
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  92  -1546.2590310441    -5900.2001724     2540.7006258    0.108D-03 0.177D-11
+                             Na = 76.999946632          Nb = 75.999954422    
+                            Exc =  -156.599435096224     N = 152.99990105    
+          Norm of current diis error: 0.18822E-02
+          max. resid. norm for Fia-block=  2.777D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.778D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0009707246 eV 
+ 
+                                              current damping :  0.300
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  93  -1546.2590338378    -5900.2014533     2540.7019040    0.350D-04 0.172D-11
+                             Na = 76.999946629          Nb = 75.999954425    
+                            Exc =  -156.599412387662     N = 152.99990105    
+          Norm of current diis error: 0.20710E-02
+          max. resid. norm for Fia-block=  2.857D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.860D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0039466707 eV 
+ 
+                                              current damping :  0.350
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  94  -1546.2590370315    -5900.1966729     2540.6971204    0.123D-01 0.209D-11
+                             Na = 76.999946608          Nb = 75.999954412    
+                            Exc =  -156.599400517456     N = 152.99990102    
+          Norm of current diis error: 0.21492E-02
+          max. resid. norm for Fia-block=  4.284D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.303D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0038332638 eV 
+ 
+                                              current damping :  0.200
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  95  -1546.2590414936    -5900.1952202     2540.6956632    0.689D-04 0.221D-11
+                             Na = 76.999946599          Nb = 75.999954413    
+                            Exc =  -156.599416591579     N = 152.99990101    
+          Norm of current diis error: 0.20063E-02
+          max. resid. norm for Fia-block=  6.013D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  6.039D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0067233405 eV 
+ 
+                                              current damping :  0.250
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  96  -1546.2590484984    -5900.2007743     2540.7012103    0.421D-04 0.198D-11
+                             Na = 76.999946610          Nb = 75.999954436    
+                            Exc =  -156.599417585265     N = 152.99990105    
+          Norm of current diis error: 0.16952E-02
+          max. resid. norm for Fia-block=  8.872D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  8.893D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0099254838 eV 
+ 
+                                              current damping :  0.300
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  97  -1546.2590582003    -5900.1958188     2540.6962451    0.557D-03 0.193D-11
+                             Na = 76.999946570          Nb = 75.999954418    
+                            Exc =  -156.599410380070     N = 152.99990099    
+          Norm of current diis error: 0.16256E-02
+          max. resid. norm for Fia-block=  7.921D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  7.929D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0061579853 eV 
+ 
+                                              current damping :  0.350
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  98  -1546.2590669002    -5900.1990992     2540.6995167    0.185D-03 0.189D-11
+                             Na = 76.999946586          Nb = 75.999954455    
+                            Exc =  -156.599381858846     N = 152.99990104    
+          Norm of current diis error: 0.15724E-02
+          max. resid. norm for Fia-block=  7.489D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  7.497D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0043238994 eV 
+ 
+                                              current damping :  0.200
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+  99  -1546.2590748772    -5900.1998809     2540.7002905    0.115D-03 0.185D-11
+                             Na = 76.999946551          Nb = 75.999954439    
+                            Exc =  -156.599378697094     N = 152.99990099    
+          Norm of current diis error: 0.14750E-02
+          max. resid. norm for Fia-block=  7.371D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  7.380D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0056702962 eV 
+ 
+                                              current damping :  0.250
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 100  -1546.2590836363    -5900.1970249     2540.6974257    0.211D-03 0.181D-11
+                             Na = 76.999946543          Nb = 75.999954454    
+                            Exc =  -156.599361794443     N = 152.99990100    
+          Norm of current diis error: 0.14809E-02
+          max. resid. norm for Fia-block=  4.466D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.466D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0023216778 eV 
+ 
+                                              current damping :  0.300
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 101  -1546.2590888946    -5900.1993013     2540.6996969    0.499D-04 0.177D-11
+                             Na = 76.999946522          Nb = 75.999954449    
+                            Exc =  -156.599329882598     N = 152.99990097    
+          Norm of current diis error: 0.16571E-02
+          max. resid. norm for Fia-block=  1.994D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  1.996D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0015032971 eV 
+ 
+                                              current damping :  0.350
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 102  -1546.2590909495    -5900.1974559     2540.6978494    0.379D-04 0.178D-11
+                             Na = 76.999946505          Nb = 75.999954441    
+                            Exc =  -156.599297945246     N = 152.99990095    
+          Norm of current diis error: 0.19691E-02
+          max. resid. norm for Fia-block=  2.080D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.081D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0012605361 eV 
+ 
+                                              current damping :  0.200
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 103  -1546.2590931546    -5900.1958256     2540.6962169    0.222D-02 0.209D-11
+                             Na = 76.999946496          Nb = 75.999954441    
+                            Exc =  -156.599271032801     N = 152.99990094    
+          Norm of current diis error: 0.20841E-02
+          max. resid. norm for Fia-block=  4.044D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.053D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0039971345 eV 
+ 
+                                              current damping :  0.250
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 104  -1546.2590977032    -5900.1969311     2540.6973178    0.310D-04 0.210D-11
+                             Na = 76.999946478          Nb = 75.999954435    
+                            Exc =  -156.599270522105     N = 152.99990091    
+          Norm of current diis error: 0.20756E-02
+          max. resid. norm for Fia-block=  4.530D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.544D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0040398732 eV 
+ 
+                                              current damping :  0.300
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 105  -1546.2591028417    -5900.1941658     2540.6945474    0.132D-03 0.204D-11
+                             Na = 76.999946491          Nb = 75.999954459    
+                            Exc =  -156.599285750179     N = 152.99990095    
+          Norm of current diis error: 0.18852E-02
+          max. resid. norm for Fia-block=  6.980D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  7.000D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0063261981 eV 
+ 
+                                              current damping :  0.350
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 106  -1546.2591101280    -5900.2041160     2540.7044903    0.132D-03 0.733D-11
+                             Na = 76.999946481          Nb = 75.999954466    
+                            Exc =  -156.599312515988     N = 152.99990095    
+          Norm of current diis error: 0.18950E-02
+          max. resid. norm for Fia-block=  6.358D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  6.364D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0059640333 eV 
+ 
+                                              current damping :  0.400
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 107  -1546.2591170072    -5900.1944975     2540.6948650    0.426D-02 0.465D-11
+                             Na = 76.999946456          Nb = 75.999954460    
+                            Exc =  -156.599284406591     N = 152.99990092    
+          Norm of current diis error: 0.16635E-02
+          max. resid. norm for Fia-block=  8.465D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  8.474D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0063105221 eV 
+ 
+                                              current damping :  0.450
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 108  -1546.2591255899    -5900.1978250     2540.6981839    0.120D-02 0.294D-11
+                             Na = 76.999946451          Nb = 75.999954476    
+                            Exc =  -156.599262906209     N = 152.99990093    
+          Norm of current diis error: 0.14665E-02
+          max. resid. norm for Fia-block=  9.640D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  9.652D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0067297035 eV 
+ 
+                                              current damping :  0.500
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 109  -1546.2591350474    -5900.1975871     2540.6979365    0.340D-03 0.227D-11
+                             Na = 76.999946426          Nb = 75.999954473    
+                            Exc =  -156.599267928189     N = 152.99990090    
+          Norm of current diis error: 0.14201E-02
+          max. resid. norm for Fia-block=  8.053D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  8.058D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0048308406 eV 
+ 
+                                              current damping :  0.350
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 110  -1546.2591429473    -5900.1969248     2540.6972663    0.327D-03 0.200D-11
+                             Na = 76.999946420          Nb = 75.999954489    
+                            Exc =  -156.599245868567     N = 152.99990091    
+          Norm of current diis error: 0.14769E-02
+          max. resid. norm for Fia-block=  6.212D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  6.214D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0025131253 eV 
+ 
+                                              current damping :  0.400
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 111  -1546.2591498889    -5900.1974205     2540.6977550    0.243D-03 0.183D-11
+                             Na = 76.999946395          Nb = 75.999954482    
+                            Exc =  -156.599208400076     N = 152.99990088    
+          Norm of current diis error: 0.15524E-02
+          max. resid. norm for Fia-block=  2.701D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.703D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0016285350 eV 
+ 
+                                              current damping :  0.450
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 112  -1546.2591526686    -5900.1970691     2540.6974009    0.725D-04 0.177D-11
+                             Na = 76.999946385          Nb = 75.999954483    
+                            Exc =  -156.599172765108     N = 152.99990087    
+          Norm of current diis error: 0.18264E-02
+          max. resid. norm for Fia-block=  2.135D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.136D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0006501484 eV 
+ 
+                                              current damping :  0.500
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 113  -1546.2591548760    -5900.1971958     2540.6975254    0.897D-02 0.209D-11
+                             Na = 76.999946378          Nb = 75.999954485    
+                            Exc =  -156.599137285720     N = 152.99990086    
+          Norm of current diis error: 0.19966E-02
+          max. resid. norm for Fia-block=  3.716D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.720D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0025400086 eV 
+ 
+                                              current damping :  0.350
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 114  -1546.2591584558    -5900.1974120     2540.6977379    0.394D-04 0.234D-11
+                             Na = 76.999946366          Nb = 75.999954482    
+                            Exc =  -156.599125874588     N = 152.99990085    
+          Norm of current diis error: 0.19791E-02
+          max. resid. norm for Fia-block=  4.224D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.230D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0035298307 eV 
+ 
+                                              current damping :  0.400
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 115  -1546.2591630393    -5900.1966297     2540.6969511    0.383D-04 0.204D-11
+                             Na = 76.999946367          Nb = 75.999954494    
+                            Exc =  -156.599147143638     N = 152.99990086    
+          Norm of current diis error: 0.18984E-02
+          max. resid. norm for Fia-block=  6.932D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  6.951D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0058480646 eV 
+ 
+                                              current damping :  0.450
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 116  -1546.2591701126    -5900.1967474     2540.6970617    0.111D-03 0.198D-11
+                             Na = 76.999946347          Nb = 75.999954489    
+                            Exc =  -156.599182180269     N = 152.99990084    
+          Norm of current diis error: 0.17025E-02
+          max. resid. norm for Fia-block=  8.718D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  8.728D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0074460126 eV 
+ 
+                                              current damping :  0.300
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 117  -1546.2591787701    -5900.1984777     2540.6987834    0.286D-03 0.193D-11
+                             Na = 76.999946353          Nb = 75.999954514    
+                            Exc =  -156.599165063020     N = 152.99990087    
+          Norm of current diis error: 0.17313E-02
+          max. resid. norm for Fia-block=  7.240D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  7.244D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0070914302 eV 
+ 
+                                              current damping :  0.350
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 118  -1546.2591872468    -5900.1940382     2540.6943354    0.203D-03 0.189D-11
+                             Na = 76.999946316          Nb = 75.999954496    
+                            Exc =  -156.599128078341     N = 152.99990081    
+          Norm of current diis error: 0.17088E-02
+          max. resid. norm for Fia-block=  7.648D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  7.653D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0052743460 eV 
+ 
+                                              current damping :  0.400
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 119  -1546.2591959066    -5900.1980942     2540.6983828    0.157D-03 0.185D-11
+                             Na = 76.999946313          Nb = 75.999954510    
+                            Exc =  -156.599134520640     N = 152.99990082    
+          Norm of current diis error: 0.15802E-02
+          max. resid. norm for Fia-block=  7.517D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  7.522D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0053202145 eV 
+ 
+                                              current damping :  0.450
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 120  -1546.2592041325    -5900.1948224     2540.6951027    0.282D-03 0.181D-11
+                             Na = 76.999946299          Nb = 75.999954514    
+                            Exc =  -156.599127895923     N = 152.99990081    
+          Norm of current diis error: 0.15973E-02
+          max. resid. norm for Fia-block=  5.518D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  5.519D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0026117881 eV 
+ 
+                                              current damping :  0.500
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 121  -1546.2592101390    -5900.1969388     2540.6972131    0.322D-04 0.177D-11
+                             Na = 76.999946285          Nb = 75.999954513    
+                            Exc =  -156.599092710060     N = 152.99990080    
+          Norm of current diis error: 0.16925E-02
+          max. resid. norm for Fia-block=  3.867D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.867D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0011449022 eV 
+ 
+                                              current damping :  0.550
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 122  -1546.2592142446    -5900.1966903     2540.6969605    0.158D-04 0.173D-11
+                             Na = 76.999946281          Nb = 75.999954519    
+                            Exc =  -156.599073585458     N = 152.99990080    
+          Norm of current diis error: 0.18329E-02
+          max. resid. norm for Fia-block=  2.400D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.400D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0005319396 eV 
+ 
+                                              current damping :  0.400
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 123  -1546.2592166900    -5900.1958237     2540.6960915    0.940D-05 0.171D-11
+                             Na = 76.999946274          Nb = 75.999954520    
+                            Exc =  -156.599042578078     N = 152.99990079    
+          Norm of current diis error: 0.19933E-02
+          max. resid. norm for Fia-block=  3.842D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.845D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0029041311 eV 
+ 
+                                              current damping :  0.450
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 124  -1546.2592208738    -5900.1970828     2540.6973464    0.460D-02 0.209D-11
+                             Na = 76.999946269          Nb = 75.999954525    
+                            Exc =  -156.599025977937     N = 152.99990079    
+          Norm of current diis error: 0.20303E-02
+          max. resid. norm for Fia-block=  4.639D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.644D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0036604587 eV 
+ 
+                                              current damping :  0.500
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 125  -1546.2592258034    -5900.1944335     2540.6946921    0.748D-05 0.204D-11
+                             Na = 76.999946262          Nb = 75.999954527    
+                            Exc =  -156.599039952200     N = 152.99990079    
+          Norm of current diis error: 0.19347E-02
+          max. resid. norm for Fia-block=  6.912D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  7.245D-04 for orbital    414a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0072286091 eV 
+ 
+                                              current damping :  0.550
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 126  -1546.2592327402    -5900.1968413     2540.6970930    0.231D-04 0.199D-11
+                             Na = 76.999946243          Nb = 75.999954518    
+                            Exc =  -156.599059350010     N = 152.99990076    
+          Norm of current diis error: 0.18135E-02
+          max. resid. norm for Fia-block=  7.925D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  7.933D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0063740166 eV 
+ 
+                                              current damping :  0.600
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 127  -1546.2592405466    -5900.1949503     2540.6951942    0.231D-04 0.733D-11
+                             Na = 76.999946253          Nb = 75.999954540    
+                            Exc =  -156.599060733621     N = 152.99990079    
+          Norm of current diis error: 0.17803E-02
+          max. resid. norm for Fia-block=  8.943D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  8.950D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0073648214 eV 
+ 
+                                              current damping :  0.650
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 128  -1546.2592492383    -5900.1963427     2540.6965780    0.491D-02 0.465D-11
+                             Na = 76.999946230          Nb = 75.999954529    
+                            Exc =  -156.599034736580     N = 152.99990076    
+          Norm of current diis error: 0.16478E-02
+          max. resid. norm for Fia-block=  9.348D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  9.355D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0073162445 eV 
+ 
+                                              current damping :  0.700
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 129  -1546.2592581240    -5900.1946062     2540.6948325    0.705D-03 0.308D-11
+                             Na = 76.999946229          Nb = 75.999954540    
+                            Exc =  -156.599027280504     N = 152.99990077    
+          Norm of current diis error: 0.15982E-02
+          max. resid. norm for Fia-block=  8.718D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  8.723D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0058182576 eV 
+ 
+                                              current damping :  0.750
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 130  -1546.2592662977    -5900.1969789     2540.6971971    0.277D-03 0.250D-11
+                             Na = 76.999946221          Nb = 75.999954543    
+                            Exc =  -156.599032564231     N = 152.99990076    
+          Norm of current diis error: 0.16113E-02
+          max. resid. norm for Fia-block=  7.271D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  7.274D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0037912685 eV 
+ 
+                                              current damping :  0.800
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 131  -1546.2592730547    -5900.1941670     2540.6943784    0.206D-03 0.221D-11
+                             Na = 76.999946212          Nb = 75.999954543    
+                            Exc =  -156.598999095811     N = 152.99990076    
+          Norm of current diis error: 0.16429E-02
+          max. resid. norm for Fia-block=  5.496D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  5.497D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0021072906 eV 
+ 
+                                              current damping :  0.850
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 132  -1546.2592780919    -5900.1949148     2540.6951212    0.722D-04 0.205D-11
+                             Na = 76.999946207          Nb = 75.999954546    
+                            Exc =  -156.598980906782     N = 152.99990075    
+          Norm of current diis error: 0.17281E-02
+          max. resid. norm for Fia-block=  3.594D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.594D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0003278314 eV 
+ 
+                                              current damping :  0.900
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 133  -1546.2592813037    -5900.1945967     2540.6947999    0.387D-04 0.195D-11
+                             Na = 76.999946199          Nb = 75.999954545    
+                            Exc =  -156.598954234987     N = 152.99990074    
+          Norm of current diis error: 0.18710E-02
+          max. resid. norm for Fia-block=  3.786D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.787D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0014800278 eV 
+ 
+                                              current damping :  0.750
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 134  -1546.2592845739    -5900.1935962     2540.6937961    0.292D-04 0.187D-11
+                             Na = 76.999946193          Nb = 75.999954545    
+                            Exc =  -156.598928556795     N = 152.99990074    
+          Norm of current diis error: 0.19420E-02
+          max. resid. norm for Fia-block=  4.501D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.504D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0034912208 eV 
+ 
+                                              current damping :  0.800
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 135  -1546.2592887204    -5900.1949281     2540.6951239    0.149D-04 0.179D-11
+                             Na = 76.999946191          Nb = 75.999954548    
+                            Exc =  -156.598926215579     N = 152.99990074    
+          Norm of current diis error: 0.19467E-02
+          max. resid. norm for Fia-block=  5.626D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  5.632D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0051534695 eV 
+ 
+                                              current damping :  0.850
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 136  -1546.2592936912    -5900.1947688     2540.6949596    0.143D-04 0.169D-11
+                             Na = 76.999946188          Nb = 75.999954551    
+                            Exc =  -156.598941502363     N = 152.99990074    
+          Norm of current diis error: 0.18873E-02
+          max. resid. norm for Fia-block=  8.363D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  9.102D-04 for orbital    414a    alpha
+          Delta Eig. =     0.0084573544 eV 
+ 
+                                              current damping :  0.700
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 137  -1546.2593007408    -5900.1945663     2540.6947500    0.368D-04 0.157D-11
+                             Na = 76.999946186          Nb = 75.999954554    
+                            Exc =  -156.598958399598     N = 152.99990074    
+          Norm of current diis error: 0.17531E-02
+          max. resid. norm for Fia-block=  1.072D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.147D-03 for orbital    414a    alpha
+          Delta Eig. =     0.0118417450 eV 
+ 
+                                              current damping :  0.750
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 138  -1546.2593105898    -5900.1952925     2540.6954663    0.338D-03 0.154D-11
+                             Na = 76.999946184          Nb = 75.999954559    
+                            Exc =  -156.598941977563     N = 152.99990074    
+          Norm of current diis error: 0.16185E-02
+          max. resid. norm for Fia-block=  1.093D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.094D-03 for orbital     77a    alpha
+          Delta Eig. =     0.0107079412 eV 
+ 
+                                              current damping :  0.800
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 139  -1546.2593205382    -5900.1931887     2540.6933526    0.577D-03 0.151D-11
+                             Na = 76.999946183          Nb = 75.999954563    
+                            Exc =  -156.598936975811     N = 152.99990075    
+          Norm of current diis error: 0.15855E-02
+          max. resid. norm for Fia-block=  9.279D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  9.283D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0074690617 eV 
+ 
+                                              current damping :  0.850
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 140  -1546.2593289516    -5900.1966248     2540.6967803    0.490D-03 0.148D-11
+                             Na = 76.999946181          Nb = 75.999954566    
+                            Exc =  -156.598934231810     N = 152.99990075    
+          Norm of current diis error: 0.16283E-02
+          max. resid. norm for Fia-block=  7.852D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  7.854D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0045459518 eV 
+ 
+                                              current damping :  0.900
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 141  -1546.2593359966    -5900.1934503     2540.6935987    0.349D-03 0.145D-11
+                             Na = 76.999946179          Nb = 75.999954568    
+                            Exc =  -156.598912169606     N = 152.99990075    
+          Norm of current diis error: 0.16277E-02
+          max. resid. norm for Fia-block=  6.017D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  6.018D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0026604618 eV 
+ 
+                                              current damping :  0.950
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 142  -1546.2593412985    -5900.1940559     2540.6941990    0.150D-04 0.143D-11
+                             Na = 76.999946176          Nb = 75.999954569    
+                            Exc =  -156.598893475541     N = 152.99990075    
+          Norm of current diis error: 0.17084E-02
+          max. resid. norm for Fia-block=  3.881D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.881D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0001592559 eV 
+ 
+                                              current damping :  1.000
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 143  -1546.2593446310    -5900.1936991     2540.6938389    0.519D-05 0.141D-11
+                             Na = 76.999946172          Nb = 75.999954569    
+                            Exc =  -156.598867928681     N = 152.99990074    
+          Norm of current diis error: 0.18480E-02
+          max. resid. norm for Fia-block=  4.191D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.192D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0018334480 eV 
+ 
+                                              current damping :  0.850
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 144  -1546.2593481097    -5900.1923123     2540.6924486    0.282D-05 0.139D-11
+                             Na = 76.999946170          Nb = 75.999954570    
+                            Exc =  -156.598846630447     N = 152.99990074    
+          Norm of current diis error: 0.19235E-02
+          max. resid. norm for Fia-block=  4.565D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.567D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0036583924 eV 
+ 
+                                              current damping :  0.900
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 145  -1546.2593521685    -5900.1932126     2540.6933449    0.100D-05 0.137D-11
+                             Na = 76.999946168          Nb = 75.999954571    
+                            Exc =  -156.598838334901     N = 152.99990074    
+          Norm of current diis error: 0.19352E-02
+          max. resid. norm for Fia-block=  5.504D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  5.509D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0054759646 eV 
+ 
+                                              current damping :  0.750
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 146  -1546.2593568512    -5900.1935462     2540.6936738    0.452D-05 0.134D-11
+                             Na = 76.999946168          Nb = 75.999954573    
+                            Exc =  -156.598847834854     N = 152.99990074    
+          Norm of current diis error: 0.19007E-02
+          max. resid. norm for Fia-block=  7.730D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  7.908D-04 for orbital    414a    alpha
+          Delta Eig. =     0.0096784123 eV 
+ 
+                                              current damping :  0.600
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 147  -1546.2593638534    -5900.1938231     2540.6939437    0.889D-05 0.131D-11
+                             Na = 76.999946171          Nb = 75.999954576    
+                            Exc =  -156.598869325029     N = 152.99990075    
+          Norm of current diis error: 0.17827E-02
+          max. resid. norm for Fia-block=  1.043D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.087D-03 for orbital    414a    alpha
+          Delta Eig. =     0.0140645280 eV 
+ 
+                                              current damping :  0.650
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 148  -1546.2593740950    -5900.1931988     2540.6933092    0.889D-05 0.733D-11
+                             Na = 76.999946175          Nb = 75.999954580    
+                            Exc =  -156.598856765922     N = 152.99990076    
+          Norm of current diis error: 0.16252E-02
+          max. resid. norm for Fia-block=  1.136D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.137D-03 for orbital     77a    alpha
+          Delta Eig. =     0.0150704815 eV 
+ 
+                                              current damping :  0.700
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 149  -1546.2593850398    -5900.1946367     2540.6947362    0.606D-02 0.465D-11
+                             Na = 76.999946182          Nb = 75.999954582    
+                            Exc =  -156.598845788697     N = 152.99990076    
+          Norm of current diis error: 0.15441E-02
+          max. resid. norm for Fia-block=  1.063D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.063D-03 for orbital     77a    alpha
+          Delta Eig. =     0.0096320794 eV 
+ 
+                                              current damping :  0.750
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 150  -1546.2593951172    -5900.1918792     2540.6919685    0.290D-03 0.314D-11
+                             Na = 76.999946189          Nb = 75.999954588    
+                            Exc =  -156.598861577496     N = 152.99990078    
+          Norm of current diis error: 0.15419E-02
+          max. resid. norm for Fia-block=  9.614D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  9.619D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0102738521 eV 
+ 
+                                              current damping :  0.800
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 151  -1546.2594040344    -5900.1955147     2540.6955951    0.255D-03 0.262D-11
+                             Na = 76.999946194          Nb = 75.999954587    
+                            Exc =  -156.598816348860     N = 152.99990078    
+          Norm of current diis error: 0.15660E-02
+          max. resid. norm for Fia-block=  7.285D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  7.287D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0029908258 eV 
+ 
+                                              current damping :  0.850
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 152  -1546.2594107141    -5900.1921432     2540.6922170    0.128D-03 0.229D-11
+                             Na = 76.999946198          Nb = 75.999954591    
+                            Exc =  -156.598814946374     N = 152.99990079    
+          Norm of current diis error: 0.16146E-02
+          max. resid. norm for Fia-block=  4.665D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.665D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0005655864 eV 
+ 
+                                              current damping :  0.900
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 153  -1546.2594148942    -5900.1923805     2540.6924501    0.927D-04 0.213D-11
+                             Na = 76.999946198          Nb = 75.999954590    
+                            Exc =  -156.598787685447     N = 152.99990079    
+          Norm of current diis error: 0.17433E-02
+          max. resid. norm for Fia-block=  3.549D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.549D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0001933009 eV 
+ 
+                                              current damping :  0.950
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 154  -1546.2594179691    -5900.1922160     2540.6922825    0.179D-04 0.201D-11
+                             Na = 76.999946197          Nb = 75.999954590    
+                            Exc =  -156.598757996321     N = 152.99990079    
+          Norm of current diis error: 0.18709E-02
+          max. resid. norm for Fia-block=  4.267D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.269D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0025494929 eV 
+ 
+                                              current damping :  0.800
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 155  -1546.2594215141    -5900.1909388     2540.6910017    0.868D-03 0.209D-11
+                             Na = 76.999946198          Nb = 75.999954592    
+                            Exc =  -156.598752686246     N = 152.99990079    
+          Norm of current diis error: 0.19161E-02
+          max. resid. norm for Fia-block=  4.758D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.761D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0052756630 eV 
+ 
+                                              current damping :  0.850
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 156  -1546.2594257468    -5900.1928174     2540.6928761    0.231D-03 0.203D-11
+                             Na = 76.999946200          Nb = 75.999954591    
+                            Exc =  -156.598746618464     N = 152.99990079    
+          Norm of current diis error: 0.19051E-02
+          max. resid. norm for Fia-block=  6.178D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  6.184D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0076732399 eV 
+ 
+                                              current damping :  0.700
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 157  -1546.2594309927    -5900.1928796     2540.6929330    0.139D-02 0.199D-11
+                             Na = 76.999946206          Nb = 75.999954593    
+                            Exc =  -156.598763858469     N = 152.99990080    
+          Norm of current diis error: 0.18232E-02
+          max. resid. norm for Fia-block=  8.988D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  8.998D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0121766094 eV 
+ 
+                                              current damping :  0.750
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 158  -1546.2594391261    -5900.1922251     2540.6922704    0.438D-03 0.194D-11
+                             Na = 76.999946217          Nb = 75.999954597    
+                            Exc =  -156.598783733869     N = 152.99990081    
+          Norm of current diis error: 0.16640E-02
+          max. resid. norm for Fia-block=  1.107D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.108D-03 for orbital     77a    alpha
+          Delta Eig. =     0.0154289644 eV 
+ 
+                                              current damping :  0.800
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 159  -1546.2594488299    -5900.1933719     2540.6934075    0.332D-02 0.189D-11
+                             Na = 76.999946229          Nb = 75.999954596    
+                            Exc =  -156.598746392135     N = 152.99990083    
+          Norm of current diis error: 0.15325E-02
+          max. resid. norm for Fia-block=  1.056D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.057D-03 for orbital     77a    alpha
+          Delta Eig. =     0.0102703797 eV 
+ 
+                                              current damping :  0.850
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 160  -1546.2594579429    -5900.1915781     2540.6916046    0.123D-03 0.185D-11
+                             Na = 76.999946247          Nb = 75.999954604    
+                            Exc =  -156.598784955211     N = 152.99990085    
+          Norm of current diis error: 0.15002E-02
+          max. resid. norm for Fia-block=  9.645D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  9.651D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0102171731 eV 
+ 
+                                              current damping :  0.900
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 161  -1546.2594660740    -5900.1937220     2540.6937403    0.356D-04 0.181D-11
+                             Na = 76.999946254          Nb = 75.999954597    
+                            Exc =  -156.598735256078     N = 152.99990085    
+          Norm of current diis error: 0.15047E-02
+          max. resid. norm for Fia-block=  8.349D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  8.353D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0050742335 eV 
+ 
+                                              current damping :  0.950
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 162  -1546.2594729676    -5900.1917514     2540.6917628    0.229D-04 0.177D-11
+                             Na = 76.999946271          Nb = 75.999954606    
+                            Exc =  -156.598748277404     N = 152.99990088    
+          Norm of current diis error: 0.15131E-02
+          max. resid. norm for Fia-block=  6.698D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  6.699D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0038440108 eV 
+ 
+                                              current damping :  1.000
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 163  -1546.2594783779    -5900.1923016     2540.6923077    0.161D-04 0.173D-11
+                             Na = 76.999946276          Nb = 75.999954603    
+                            Exc =  -156.598727209810     N = 152.99990088    
+          Norm of current diis error: 0.15527E-02
+          max. resid. norm for Fia-block=  4.805D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.806D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0011171351 eV 
+ 
+                                              current damping :  1.050
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 164  -1546.2594821676    -5900.1920016     2540.6920039    0.655D-05 0.170D-11
+                             Na = 76.999946281          Nb = 75.999954604    
+                            Exc =  -156.598705413173     N = 152.99990088    
+          Norm of current diis error: 0.16498E-02
+          max. resid. norm for Fia-block=  4.031D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.031D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0008567961 eV 
+ 
+                                              current damping :  0.900
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 165  -1546.2594852487    -5900.1913637     2540.6913629    0.183D-05 0.167D-11
+                             Na = 76.999946285          Nb = 75.999954605    
+                            Exc =  -156.598693387318     N = 152.99990089    
+          Norm of current diis error: 0.17399E-02
+          max. resid. norm for Fia-block=  4.255D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.257D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0030334633 eV 
+ 
+                                              current damping :  0.950
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 166  -1546.2594887074    -5900.1917047     2540.6917004    0.181D-01 0.209D-11
+                             Na = 76.999946288          Nb = 75.999954603    
+                            Exc =  -156.598675364848     N = 152.99990089    
+          Norm of current diis error: 0.17830E-02
+          max. resid. norm for Fia-block=  4.674D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.677D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0040307525 eV 
+ 
+                                              current damping :  1.000
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 167  -1546.2594923614    -5900.1915542     2540.6915463    0.335D-05 0.204D-11
+                             Na = 76.999946295          Nb = 75.999954605    
+                            Exc =  -156.598674389040     N = 152.99990090    
+          Norm of current diis error: 0.17779E-02
+          max. resid. norm for Fia-block=  5.940D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  5.945D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0062302135 eV 
+ 
+                                              current damping :  1.050
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 168  -1546.2594968037    -5900.1918817     2540.6918693    0.364D-05 0.198D-11
+                             Na = 76.999946304          Nb = 75.999954606    
+                            Exc =  -156.598689134126     N = 152.99990091    
+          Norm of current diis error: 0.17175E-02
+          max. resid. norm for Fia-block=  8.184D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  8.194D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0088672241 eV 
+ 
+                                              current damping :  1.100
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 169  -1546.2595026339    -5900.1918532     2540.6918350    0.364D-05 0.733D-11
+                             Na = 76.999946317          Nb = 75.999954607    
+                            Exc =  -156.598697018768     N = 152.99990092    
+          Norm of current diis error: 0.15991E-02
+          max. resid. norm for Fia-block=  1.005D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.006D-03 for orbital     77a    alpha
+          Delta Eig. =     0.0106402917 eV 
+ 
+                                              current damping :  1.150
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 170  -1546.2595095743    -5900.1918867     2540.6918616    0.421D-02 0.465D-11
+                             Na = 76.999946334          Nb = 75.999954608    
+                            Exc =  -156.598685465364     N = 152.99990094    
+          Norm of current diis error: 0.14794E-02
+          max. resid. norm for Fia-block=  1.021D-03 for orbital     77a    alpha
+          max. resid. fock norm         =  1.022D-03 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0092446255 eV 
+ 
+                                              current damping :  1.200
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 171  -1546.2595164823    -5900.1917426     2540.6917106    0.627D-04 0.308D-11
+                             Na = 76.999946351          Nb = 75.999954609    
+                            Exc =  -156.598691324146     N = 152.99990096    
+          Norm of current diis error: 0.14124E-02
+          max. resid. norm for Fia-block=  9.909D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  9.916D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0081302870 eV 
+ 
+                                              current damping :  1.250
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 172  -1546.2595230341    -5900.1919341     2540.6918955    0.618D-04 0.238D-11
+                             Na = 76.999946369          Nb = 75.999954610    
+                            Exc =  -156.598681364048     N = 152.99990098    
+          Norm of current diis error: 0.13781E-02
+          max. resid. norm for Fia-block=  9.654D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  9.660D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0067767161 eV 
+ 
+                                              current damping :  1.300
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 173  -1546.2595292508    -5900.1916023     2540.6915575    0.329D-04 0.198D-11
+                             Na = 76.999946385          Nb = 75.999954610    
+                            Exc =  -156.598682246462     N = 152.99990099    
+          Norm of current diis error: 0.13578E-02
+          max. resid. norm for Fia-block=  9.093D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  9.097D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0060865991 eV 
+ 
+                                              current damping :  1.350
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 174  -1546.2595349587    -5900.1917976     2540.6917471    0.259D-04 0.174D-11
+                             Na = 76.999946402          Nb = 75.999954612    
+                            Exc =  -156.598668100621     N = 152.99990101    
+          Norm of current diis error: 0.13497E-02
+          max. resid. norm for Fia-block=  8.138D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  8.142D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0042724122 eV 
+ 
+                                              current damping :  1.400
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 175  -1546.2595399518    -5900.1914607     2540.6914052    0.213D-03 0.170D-11
+                             Na = 76.999946414          Nb = 75.999954611    
+                            Exc =  -156.598665007993     N = 152.99990102    
+          Norm of current diis error: 0.13569E-02
+          max. resid. norm for Fia-block=  6.889D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  6.891D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0030753678 eV 
+ 
+                                              current damping :  1.450
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 176  -1546.2595440918    -5900.1914720     2540.6914124    0.206D-04 0.170D-11
+                             Na = 76.999946428          Nb = 75.999954613    
+                            Exc =  -156.598651793703     N = 152.99990104    
+          Norm of current diis error: 0.13823E-02
+          max. resid. norm for Fia-block=  5.625D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  5.626D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0017441343 eV 
+ 
+                                              current damping :  1.500
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 177  -1546.2595474018    -5900.1912808     2540.6912178    0.362D-05 0.172D-11
+                             Na = 76.999946436          Nb = 75.999954612    
+                            Exc =  -156.598640344995     N = 152.99990105    
+          Norm of current diis error: 0.14290E-02
+          max. resid. norm for Fia-block=  4.773D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.774D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0012674788 eV 
+ 
+                                              current damping :  1.350
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 178  -1546.2595501428    -5900.1910954     2540.6910297    0.333D-05 0.160D-11
+                             Na = 76.999946443          Nb = 75.999954612    
+                            Exc =  -156.598629154092     N = 152.99990105    
+          Norm of current diis error: 0.14844E-02
+          max. resid. norm for Fia-block=  4.566D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.567D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0017836627 eV 
+ 
+                                              current damping :  1.200
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 179  -1546.2595529016    -5900.1910065     2540.6909380    0.128D-01 0.209D-11
+                             Na = 76.999946451          Nb = 75.999954612    
+                            Exc =  -156.598618455055     N = 152.99990106    
+          Norm of current diis error: 0.15290E-02
+          max. resid. norm for Fia-block=  4.665D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.667D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0025242484 eV 
+ 
+                                              current damping :  1.050
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 180  -1546.2595558830    -5900.1909269     2540.6908555    0.607D-05 0.209D-11
+                             Na = 76.999946458          Nb = 75.999954612    
+                            Exc =  -156.598613430009     N = 152.99990107    
+          Norm of current diis error: 0.15520E-02
+          max. resid. norm for Fia-block=  5.030D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  5.032D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0036023596 eV 
+ 
+                                              current damping :  1.100
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 181  -1546.2595592898    -5900.1910122     2540.6909374    0.156D-04 0.209D-11
+                             Na = 76.999946469          Nb = 75.999954612    
+                            Exc =  -156.598613789451     N = 152.99990108    
+          Norm of current diis error: 0.15460E-02
+          max. resid. norm for Fia-block=  5.903D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  5.908D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0047061264 eV 
+ 
+                                              current damping :  0.950
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 182  -1546.2595631079    -5900.1911016     2540.6910229    0.593D-04 0.203D-11
+                             Na = 76.999946482          Nb = 75.999954613    
+                            Exc =  -156.598617580765     N = 152.99990109    
+          Norm of current diis error: 0.15034E-02
+          max. resid. norm for Fia-block=  7.414D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  7.421D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0068092384 eV 
+ 
+                                              current damping :  1.000
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 183  -1546.2595681678    -5900.1910612     2540.6909775    0.241D-04 0.198D-11
+                             Na = 76.999946499          Nb = 75.999954613    
+                            Exc =  -156.598618594910     N = 152.99990111    
+          Norm of current diis error: 0.14144E-02
+          max. resid. norm for Fia-block=  9.048D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  9.058D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0082393134 eV 
+ 
+                                              current damping :  1.050
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 184  -1546.2595741252    -5900.1910989     2540.6910092    0.157D-03 0.194D-11
+                             Na = 76.999946521          Nb = 75.999954613    
+                            Exc =  -156.598613628131     N = 152.99990113    
+          Norm of current diis error: 0.13135E-02
+          max. resid. norm for Fia-block=  9.324D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  9.332D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0073267749 eV 
+ 
+                                              current damping :  1.100
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 185  -1546.2595800962    -5900.1910196     2540.6909239    0.184D-04 0.189D-11
+                             Na = 76.999946545          Nb = 75.999954614    
+                            Exc =  -156.598613194124     N = 152.99990116    
+          Norm of current diis error: 0.12524E-02
+          max. resid. norm for Fia-block=  9.030D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  9.037D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0062635712 eV 
+ 
+                                              current damping :  1.150
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 186  -1546.2595857068    -5900.1910480     2540.6909467    0.469D-04 0.185D-11
+                             Na = 76.999946567          Nb = 75.999954613    
+                            Exc =  -156.598605041205     N = 152.99990118    
+          Norm of current diis error: 0.12199E-02
+          max. resid. norm for Fia-block=  8.839D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  8.844D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0053459031 eV 
+ 
+                                              current damping :  1.200
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 187  -1546.2595910126    -5900.1909313     2540.6908247    0.232D-04 0.181D-11
+                             Na = 76.999946590          Nb = 75.999954614    
+                            Exc =  -156.598603446034     N = 152.99990120    
+          Norm of current diis error: 0.11981E-02
+          max. resid. norm for Fia-block=  8.456D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  8.460D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0047962031 eV 
+ 
+                                              current damping :  1.050
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 188  -1546.2595959445    -5900.1909118     2540.6908003    0.421D-04 0.177D-11
+                             Na = 76.999946609          Nb = 75.999954613    
+                            Exc =  -156.598592721409     N = 152.99990122    
+          Norm of current diis error: 0.11846E-02
+          max. resid. norm for Fia-block=  7.748D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  7.752D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0039464343 eV 
+ density matrices became linear dependent...
+ subr. ddmat can not establish optimal
+ linear combination of delta densities !
+ next fock matrix will be calculated from scratch !
+ 
+                                              current damping :  0.900
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 189  -1546.2596007451    -5900.1908479     2540.6907316    0.421D-04 0.733D-11
+                             Na = 76.999946633          Nb = 75.999954615    
+                            Exc =  -156.598589243257     N = 152.99990125    
+          Norm of current diis error: 0.11829E-02
+          max. resid. norm for Fia-block=  6.714D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  6.717D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0032767181 eV 
+ 
+                                              current damping :  0.750
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 190  -1546.2596052226    -5900.1906034     2540.6904827    0.328D-02 0.465D-11
+                             Na = 76.999946649          Nb = 75.999954611    
+                            Exc =  -156.598573753094     N = 152.99990126    
+          Norm of current diis error: 0.12008E-02
+          max. resid. norm for Fia-block=  5.169D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  5.170D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0016459410 eV 
+ 
+                                              current damping :  0.800
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 191  -1546.2596089582    -5900.1906229     2540.6904984    0.147D-03 0.320D-11
+                             Na = 76.999946669          Nb = 75.999954615    
+                            Exc =  -156.598562424352     N = 152.99990128    
+          Norm of current diis error: 0.12574E-02
+          max. resid. norm for Fia-block=  3.536D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.536D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0002664540 eV 
+ 
+                                              current damping :  0.850
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 192  -1546.2596114287    -5900.1902898     2540.6901628    0.881D-04 0.271D-11
+                             Na = 76.999946678          Nb = 75.999954614    
+                            Exc =  -156.598544678786     N = 152.99990129    
+          Norm of current diis error: 0.13543E-02
+          max. resid. norm for Fia-block=  2.923D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.923D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0005252014 eV 
+ 
+                                              current damping :  0.700
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 193  -1546.2596133963    -5900.1900442     2540.6899152    0.131D-04 0.241D-11
+                             Na = 76.999946686          Nb = 75.999954613    
+                            Exc =  -156.598528790698     N = 152.99990130    
+          Norm of current diis error: 0.14331E-02
+          max. resid. norm for Fia-block=  3.163D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.164D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0016635463 eV 
+ 
+                                              current damping :  0.550
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 194  -1546.2596156750    -5900.1899607     2540.6898295    0.164D-04 0.212D-11
+                             Na = 76.999946697          Nb = 75.999954614    
+                            Exc =  -156.598521738414     N = 152.99990131    
+          Norm of current diis error: 0.14611E-02
+          max. resid. norm for Fia-block=  3.622D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.625D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0029952275 eV 
+ 
+                                              current damping :  0.400
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 195  -1546.2596184872    -5900.1899067     2540.6897727    0.108D-03 0.209D-11
+                             Na = 76.999946706          Nb = 75.999954610    
+                            Exc =  -156.598523880163     N = 152.99990132    
+          Norm of current diis error: 0.14400E-02
+          max. resid. norm for Fia-block=  4.963D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.969D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0054128700 eV 
+ 
+                                              current damping :  0.450
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 196  -1546.2596226344    -5900.1907193     2540.6905811    0.186D-02 0.209D-11
+                             Na = 76.999946731          Nb = 75.999954615    
+                            Exc =  -156.598543846355     N = 152.99990135    
+          Norm of current diis error: 0.13334E-02
+          max. resid. norm for Fia-block=  7.636D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  7.646D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0074885887 eV 
+ 
+                                              current damping :  0.500
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 197  -1546.2596285970    -5900.1891418     2540.6889976    0.112D-02 0.203D-11
+                             Na = 76.999946753          Nb = 75.999954605    
+                            Exc =  -156.598536013733     N = 152.99990136    
+          Norm of current diis error: 0.12122E-02
+          max. resid. norm for Fia-block=  6.626D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  6.631D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0058270963 eV 
+ 
+                                              current damping :  0.550
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 198  -1546.2596336143    -5900.1921760     2540.6920268    0.347D-03 0.198D-11
+                             Na = 76.999946804          Nb = 75.999954626    
+                            Exc =  -156.598520847711     N = 152.99990143    
+          Norm of current diis error: 0.13295E-02
+          max. resid. norm for Fia-block=  5.462D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  5.464D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0031655248 eV 
+ 
+                                              current damping :  0.600
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 199  -1546.2596377405    -5900.1901685     2540.6900152    0.687D-03 0.193D-11
+                             Na = 76.999946809          Nb = 75.999954608    
+                            Exc =  -156.598523075719     N = 152.99990142    
+          Norm of current diis error: 0.11469E-02
+          max. resid. norm for Fia-block=  7.861D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  7.869D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0058668983 eV 
+ 
+                                              current damping :  0.650
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 200  -1546.2596431303    -5900.1901997     2540.6900411    0.243D-02 0.189D-11
+                             Na = 76.999946844          Nb = 75.999954611    
+                            Exc =  -156.598537640631     N = 152.99990146    
+          Norm of current diis error: 0.10511E-02
+          max. resid. norm for Fia-block=  7.781D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  7.787D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0055886558 eV 
+ 
+                                              current damping :  0.500
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 201  -1546.2596482584    -5900.1904741     2540.6903103    0.206D-03 0.185D-11
+                             Na = 76.999946876          Nb = 75.999954610    
+                            Exc =  -156.598498918240     N = 152.99990149    
+          Norm of current diis error: 0.10142E-02
+          max. resid. norm for Fia-block=  6.551D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  6.554D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0044023854 eV 
+ 
+                                              current damping :  0.550
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 202  -1546.2596529877    -5900.1900661     2540.6898976    0.653D-03 0.181D-11
+                             Na = 76.999946905          Nb = 75.999954610    
+                            Exc =  -156.598533489719     N = 152.99990151    
+          Norm of current diis error: 0.10373E-02
+          max. resid. norm for Fia-block=  5.405D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  5.407D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0032593623 eV 
+ 
+                                              current damping :  0.400
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 203  -1546.2596567346    -5900.1895719     2540.6893996    0.107D-03 0.177D-11
+                             Na = 76.999946929          Nb = 75.999954608    
+                            Exc =  -156.598483533160     N = 152.99990154    
+          Norm of current diis error: 0.10640E-02
+          max. resid. norm for Fia-block=  3.699D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.699D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0012981366 eV 
+ 
+                                              current damping :  0.450
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 204  -1546.2596595731    -5900.1902039     2540.6900287    0.239D-04 0.173D-11
+                             Na = 76.999946949          Nb = 75.999954609    
+                            Exc =  -156.598481673510     N = 152.99990156    
+          Norm of current diis error: 0.11258E-02
+          max. resid. norm for Fia-block=  2.004D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.004D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0006408919 eV 
+ 
+                                              current damping :  0.500
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 205  -1546.2596610151    -5900.1897918     2540.6896152    0.137D-01 0.209D-11
+                             Na = 76.999946957          Nb = 75.999954609    
+                            Exc =  -156.598463330907     N = 152.99990157    
+          Norm of current diis error: 0.12665E-02
+          max. resid. norm for Fia-block=  2.104D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.105D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0011071664 eV 
+ density matrices became linear dependent...
+ subr. ddmat can not establish optimal
+ linear combination of delta densities !
+ next fock matrix will be calculated from scratch !
+ 
+                                              current damping :  0.550
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 206  -1546.2596624792    -5900.1898686     2540.6896905    0.137D-01 0.733D-11
+                             Na = 76.999946967          Nb = 75.999954609    
+                            Exc =  -156.598440970544     N = 152.99990158    
+          Norm of current diis error: 0.13057E-02
+          max. resid. norm for Fia-block=  2.678D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.680D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0020799637 eV 
+ 
+                                              current damping :  0.400
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 207  -1546.2596642237    -5900.1902913     2540.6901115    0.158D-02 0.465D-11
+                             Na = 76.999946978          Nb = 75.999954610    
+                            Exc =  -156.598457613627     N = 152.99990159    
+          Norm of current diis error: 0.13108E-02
+          max. resid. norm for Fia-block=  3.313D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.316D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0027886490 eV 
+ 
+                                              current damping :  0.450
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 208  -1546.2596666032    -5900.1891200     2540.6889378    0.346D-03 0.286D-11
+                             Na = 76.999946991          Nb = 75.999954606    
+                            Exc =  -156.598464352812     N = 152.99990160    
+          Norm of current diis error: 0.12175E-02
+          max. resid. norm for Fia-block=  5.500D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  5.507D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0054731261 eV 
+ 
+                                              current damping :  0.500
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 209  -1546.2596702574    -5900.1915461     2540.6913603    0.212D-03 0.209D-11
+                             Na = 76.999947023          Nb = 75.999954611    
+                            Exc =  -156.598474045426     N = 152.99990163    
+          Norm of current diis error: 0.11131E-02
+          max. resid. norm for Fia-block=  5.966D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  5.971D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0058477589 eV 
+ 
+                                              current damping :  0.550
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 210  -1546.2596740658    -5900.1869181     2540.6867285    0.316D-02 0.203D-11
+                             Na = 76.999947039          Nb = 75.999954599    
+                            Exc =  -156.598463518518     N = 152.99990164    
+          Norm of current diis error: 0.11390E-02
+          max. resid. norm for Fia-block=  4.713D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.716D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0032775073 eV 
+ 
+                                              current damping :  0.600
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 211  -1546.2596770860    -5900.1905496     2540.6903570    0.238D-03 0.199D-11
+                             Na = 76.999947072          Nb = 75.999954608    
+                            Exc =  -156.598455077695     N = 152.99990168    
+          Norm of current diis error: 0.99082E-03
+          max. resid. norm for Fia-block=  6.854D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  6.861D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0051550129 eV 
+ 
+                                              current damping :  0.650
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 212  -1546.2596810825    -5900.1896569     2540.6894602    0.846D-04 0.194D-11
+                             Na = 76.999947100          Nb = 75.999954603    
+                            Exc =  -156.598466410495     N = 152.99990170    
+          Norm of current diis error: 0.89300E-03
+          max. resid. norm for Fia-block=  6.443D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  6.447D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0042134974 eV 
+ 
+                                              current damping :  0.700
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 213  -1546.2596847029    -5900.1901204     2540.6899201    0.488D-03 0.189D-11
+                             Na = 76.999947133          Nb = 75.999954606    
+                            Exc =  -156.598455585075     N = 152.99990174    
+          Norm of current diis error: 0.88026E-03
+          max. resid. norm for Fia-block=  4.952D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.954D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0021580382 eV 
+ 
+                                              current damping :  0.750
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 214  -1546.2596874134    -5900.1891356     2540.6889326    0.182D-03 0.185D-11
+                             Na = 76.999947151          Nb = 75.999954601    
+                            Exc =  -156.598439051043     N = 152.99990175    
+          Norm of current diis error: 0.90341E-03
+          max. resid. norm for Fia-block=  4.543D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.545D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0017841590 eV 
+ 
+                                              current damping :  0.800
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 215  -1546.2596897987    -5900.1902198     2540.6900145    0.954D-03 0.209D-11
+                             Na = 76.999947174          Nb = 75.999954603    
+                            Exc =  -156.598440677732     N = 152.99990178    
+          Norm of current diis error: 0.89292E-03
+          max. resid. norm for Fia-block=  3.325D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.325D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0008600748 eV 
+ 
+                                              current damping :  0.850
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 216  -1546.2596914898    -5900.1893651     2540.6891581    0.221D-03 0.209D-11
+                             Na = 76.999947186          Nb = 75.999954602    
+                            Exc =  -156.598432046965     N = 152.99990179    
+          Norm of current diis error: 0.93803E-03
+          max. resid. norm for Fia-block=  2.325D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.325D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0001742226 eV 
+ 
+                                              current damping :  0.700
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 217  -1546.2596926309    -5900.1892442     2540.6890360    0.296D-03 0.209D-11
+                             Na = 76.999947196          Nb = 75.999954601    
+                            Exc =  -156.598422413712     N = 152.99990180    
+          Norm of current diis error: 0.10100E-02
+          max. resid. norm for Fia-block=  2.289D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.289D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0008169030 eV 
+ 
+                                              current damping :  0.750
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 218  -1546.2596938376    -5900.1893245     2540.6891151    0.609D-03 0.209D-11
+                             Na = 76.999947207          Nb = 75.999954602    
+                            Exc =  -156.598418287849     N = 152.99990181    
+          Norm of current diis error: 0.10544E-02
+          max. resid. norm for Fia-block=  2.336D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.337D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0010671905 eV 
+ 
+                                              current damping :  0.800
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 219  -1546.2596950179    -5900.1888389     2540.6886283    0.540D-03 0.209D-11
+                             Na = 76.999947216          Nb = 75.999954601    
+                            Exc =  -156.598412748864     N = 152.99990182    
+          Norm of current diis error: 0.10633E-02
+          max. resid. norm for Fia-block=  2.807D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.809D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0017069918 eV 
+ 
+                                              current damping :  0.850
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 220  -1546.2596963682    -5900.1895940     2540.6893821    0.113D-02 0.209D-11
+                             Na = 76.999947228          Nb = 75.999954602    
+                            Exc =  -156.598414005279     N = 152.99990183    
+          Norm of current diis error: 0.10352E-02
+          max. resid. norm for Fia-block=  4.077D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.082D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0027672552 eV 
+ density matrices became linear dependent...
+ subr. ddmat can not establish optimal
+ linear combination of delta densities !
+ next fock matrix will be calculated from scratch !
+ 
+                                              current damping :  0.900
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 221  -1546.2596982229    -5900.1893027     2540.6890890    0.113D-02 0.733D-11
+                             Na = 76.999947243          Nb = 75.999954600    
+                            Exc =  -156.598420383402     N = 152.99990184    
+          Norm of current diis error: 0.95495E-03
+          max. resid. norm for Fia-block=  5.549D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  5.555D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0040156208 eV 
+ 
+                                              current damping :  0.950
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 222  -1546.2597006328    -5900.1899793     2540.6897631    0.260D-02 0.465D-11
+                             Na = 76.999947267          Nb = 75.999954601    
+                            Exc =  -156.598419593747     N = 152.99990187    
+          Norm of current diis error: 0.86644E-03
+          max. resid. norm for Fia-block=  5.371D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  5.375D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0029329169 eV 
+ 
+                                              current damping :  1.000
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 223  -1546.2597029024    -5900.1882462     2540.6880278    0.264D-03 0.312D-11
+                             Na = 76.999947284          Nb = 75.999954596    
+                            Exc =  -156.598408154414     N = 152.99990188    
+          Norm of current diis error: 0.85866E-03
+          max. resid. norm for Fia-block=  4.424D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.426D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0017247647 eV 
+ 
+                                              current damping :  1.050
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 224  -1546.2597047527    -5900.1904603     2540.6902399    0.990D-04 0.263D-11
+                             Na = 76.999947306          Nb = 75.999954600    
+                            Exc =  -156.598412302197     N = 152.99990191    
+          Norm of current diis error: 0.82642E-03
+          max. resid. norm for Fia-block=  4.983D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.986D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0026719489 eV 
+ 
+                                              current damping :  1.100
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 225  -1546.2597067346    -5900.1890248     2540.6888025    0.524D-04 0.226D-11
+                             Na = 76.999947323          Nb = 75.999954598    
+                            Exc =  -156.598410807204     N = 152.99990192    
+          Norm of current diis error: 0.78739E-03
+          max. resid. norm for Fia-block=  4.979D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.982D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0021843352 eV 
+ 
+                                              current damping :  1.150
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 226  -1546.2597086432    -5900.1900047     2540.6897805    0.190D-03 0.209D-11
+                             Na = 76.999947342          Nb = 75.999954597    
+                            Exc =  -156.598403558009     N = 152.99990194    
+          Norm of current diis error: 0.77009E-03
+          max. resid. norm for Fia-block=  4.450D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.452D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0019335566 eV 
+ 
+                                              current damping :  1.200
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 227  -1546.2597103017    -5900.1890533     2540.6888274    0.186D-02 0.209D-11
+                             Na = 76.999947358          Nb = 75.999954597    
+                            Exc =  -156.598401817944     N = 152.99990196    
+          Norm of current diis error: 0.76806E-03
+          max. resid. norm for Fia-block=  4.142D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.144D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0014055629 eV 
+ 
+                                              current damping :  1.250
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 228  -1546.2597117978    -5900.1898636     2540.6896363    0.749D-04 0.209D-11
+                             Na = 76.999947373          Nb = 75.999954596    
+                            Exc =  -156.598397055153     N = 152.99990197    
+          Norm of current diis error: 0.77043E-03
+          max. resid. norm for Fia-block=  3.639D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.640D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0012018524 eV 
+ 
+                                              current damping :  1.300
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 229  -1546.2597130773    -5900.1891643     2540.6889356    0.538D-04 0.209D-11
+                             Na = 76.999947386          Nb = 75.999954596    
+                            Exc =  -156.598392066294     N = 152.99990198    
+          Norm of current diis error: 0.78013E-03
+          max. resid. norm for Fia-block=  3.121D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.122D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0007406723 eV 
+ 
+                                              current damping :  1.350
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 230  -1546.2597141452    -5900.1893800     2540.6891503    0.296D-03 0.209D-11
+                             Na = 76.999947397          Nb = 75.999954596    
+                            Exc =  -156.598387870810     N = 152.99990199    
+          Norm of current diis error: 0.79945E-03
+          max. resid. norm for Fia-block=  2.770D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.771D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0006294245 eV 
+ 
+                                              current damping :  1.200
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 231  -1546.2597150654    -5900.1893944     2540.6891638    0.812D-04 0.209D-11
+                             Na = 76.999947406          Nb = 75.999954595    
+                            Exc =  -156.598383238207     N = 152.99990200    
+          Norm of current diis error: 0.82220E-03
+          max. resid. norm for Fia-block=  2.615D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.616D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0007647086 eV 
+ 
+                                              current damping :  1.250
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 232  -1546.2597159861    -5900.1892099     2540.6889783    0.461D-03 0.209D-11
+                             Na = 76.999947416          Nb = 75.999954595    
+                            Exc =  -156.598379465865     N = 152.99990201    
+          Norm of current diis error: 0.84154E-03
+          max. resid. norm for Fia-block=  2.639D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.640D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0008374352 eV 
+ 
+                                              current damping :  1.300
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 233  -1546.2597168837    -5900.1894199     2540.6891874    0.312D-03 0.209D-11
+                             Na = 76.999947425          Nb = 75.999954595    
+                            Exc =  -156.598377403319     N = 152.99990202    
+          Norm of current diis error: 0.84887E-03
+          max. resid. norm for Fia-block=  2.903D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.904D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0011585177 eV 
+ density matrices became linear dependent...
+ subr. ddmat can not establish optimal
+ linear combination of delta densities !
+ next fock matrix will be calculated from scratch !
+ 
+                                              current damping :  1.350
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 234  -1546.2597178318    -5900.1893080     2540.6890746    0.312D-03 0.733D-11
+                             Na = 76.999947435          Nb = 75.999954594    
+                            Exc =  -156.598376631139     N = 152.99990203    
+          Norm of current diis error: 0.83946E-03
+          max. resid. norm for Fia-block=  3.454D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.457D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0015635331 eV 
+ 
+                                              current damping :  1.400
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 235  -1546.2597189209    -5900.1893541     2540.6891196    0.134D-02 0.465D-11
+                             Na = 76.999947446          Nb = 75.999954594    
+                            Exc =  -156.598376893909     N = 152.99990204    
+          Norm of current diis error: 0.81066E-03
+          max. resid. norm for Fia-block=  4.211D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.215D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0020566079 eV 
+ 
+                                              current damping :  1.450
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 236  -1546.2597201982    -5900.1893368     2540.6891011    0.157D-04 0.296D-11
+                             Na = 76.999947459          Nb = 75.999954594    
+                            Exc =  -156.598375804635     N = 152.99990205    
+          Norm of current diis error: 0.76601E-03
+          max. resid. norm for Fia-block=  4.758D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.763D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0022384037 eV 
+ 
+                                              current damping :  1.500
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 237  -1546.2597215966    -5900.1894196     2540.6891825    0.119D-04 0.226D-11
+                             Na = 76.999947474          Nb = 75.999954593    
+                            Exc =  -156.598373867481     N = 152.99990207    
+          Norm of current diis error: 0.72244E-03
+          max. resid. norm for Fia-block=  4.838D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.842D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0021010904 eV 
+ 
+                                              current damping :  1.550
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 238  -1546.2597229854    -5900.1892256     2540.6889871    0.463D-03 0.209D-11
+                             Na = 76.999947489          Nb = 75.999954592    
+                            Exc =  -156.598371571120     N = 152.99990208    
+          Norm of current diis error: 0.69314E-03
+          max. resid. norm for Fia-block=  4.707D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.710D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0017501177 eV 
+ 
+                                              current damping :  1.600
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 239  -1546.2597242985    -5900.1895469     2540.6893071    0.671D-03 0.209D-11
+                             Na = 76.999947504          Nb = 75.999954592    
+                            Exc =  -156.598369517332     N = 152.99990210    
+          Norm of current diis error: 0.67600E-03
+          max. resid. norm for Fia-block=  4.500D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.503D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0016262169 eV 
+ 
+                                              current damping :  1.650
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 240  -1546.2597255249    -5900.1890666     2540.6888256    0.907D-03 0.209D-11
+                             Na = 76.999947518          Nb = 75.999954591    
+                            Exc =  -156.598366056074     N = 152.99990211    
+          Norm of current diis error: 0.66662E-03
+          max. resid. norm for Fia-block=  4.150D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.152D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0011849892 eV 
+ 
+                                              current damping :  1.700
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 241  -1546.2597266314    -5900.1896088     2540.6893666    0.330D-03 0.209D-11
+                             Na = 76.999947531          Nb = 75.999954591    
+                            Exc =  -156.598363644869     N = 152.99990212    
+          Norm of current diis error: 0.66389E-03
+          max. resid. norm for Fia-block=  3.700D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.701D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0010410364 eV 
+ 
+                                              current damping :  1.750
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 242  -1546.2597275964    -5900.1890823     2540.6888391    0.102D-02 0.209D-11
+                             Na = 76.999947541          Nb = 75.999954591    
+                            Exc =  -156.598359566158     N = 152.99990213    
+          Norm of current diis error: 0.66730E-03
+          max. resid. norm for Fia-block=  3.236D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.237D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0006855903 eV 
+ 
+                                              current damping :  1.800
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 243  -1546.2597284223    -5900.1893527     2540.6891087    0.188D-03 0.209D-11
+                             Na = 76.999947551          Nb = 75.999954591    
+                            Exc =  -156.598356405681     N = 152.99990214    
+          Norm of current diis error: 0.67768E-03
+          max. resid. norm for Fia-block=  2.819D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.820D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0005320009 eV 
+ density matrices became linear dependent...
+ subr. ddmat can not establish optimal
+ linear combination of delta densities !
+ next fock matrix will be calculated from scratch !
+ 
+                                              current damping :  1.850
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 244  -1546.2597291230    -5900.1892490     2540.6890044    0.188D-03 0.733D-11
+                             Na = 76.999947559          Nb = 75.999954590    
+                            Exc =  -156.598352704379     N = 152.99990215    
+          Norm of current diis error: 0.69460E-03
+          max. resid. norm for Fia-block=  2.555D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.555D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0004623195 eV 
+ 
+                                              current damping :  1.700
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 245  -1546.2597297480    -5900.1891704     2540.6889251    0.843D-03 0.465D-11
+                             Na = 76.999947566          Nb = 75.999954590    
+                            Exc =  -156.598349294642     N = 152.99990216    
+          Norm of current diis error: 0.71275E-03
+          max. resid. norm for Fia-block=  2.479D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.480D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0005254316 eV 
+ 
+                                              current damping :  1.750
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 246  -1546.2597303836    -5900.1892454     2540.6889995    0.127D-04 0.307D-11
+                             Na = 76.999947574          Nb = 75.999954590    
+                            Exc =  -156.598346573818     N = 152.99990216    
+          Norm of current diis error: 0.72737E-03
+          max. resid. norm for Fia-block=  2.513D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.514D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0006492479 eV 
+ 
+                                              current damping :  1.800
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 247  -1546.2597310087    -5900.1891685     2540.6889219    0.116D-04 0.247D-11
+                             Na = 76.999947581          Nb = 75.999954590    
+                            Exc =  -156.598344595993     N = 152.99990217    
+          Norm of current diis error: 0.73434E-03
+          max. resid. norm for Fia-block=  2.684D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.686D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0007856819 eV 
+ 
+                                              current damping :  1.850
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 248  -1546.2597316570    -5900.1891964     2540.6889492    0.501D-05 0.209D-11
+                             Na = 76.999947588          Nb = 75.999954590    
+                            Exc =  -156.598343702054     N = 152.99990218    
+          Norm of current diis error: 0.73182E-03
+          max. resid. norm for Fia-block=  2.987D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.989D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0009874787 eV 
+ 
+                                              current damping :  1.700
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 249  -1546.2597323539    -5900.1892128     2540.6889649    0.635D-03 0.209D-11
+                             Na = 76.999947597          Nb = 75.999954589    
+                            Exc =  -156.598343220950     N = 152.99990219    
+          Norm of current diis error: 0.71925E-03
+          max. resid. norm for Fia-block=  3.370D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.373D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0012875858 eV 
+ 
+                                              current damping :  1.750
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 250  -1546.2597331737    -5900.1892089     2540.6889602    0.970D-04 0.209D-11
+                             Na = 76.999947606          Nb = 75.999954589    
+                            Exc =  -156.598342324706     N = 152.99990220    
+          Norm of current diis error: 0.69687E-03
+          max. resid. norm for Fia-block=  3.757D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.760D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0014529057 eV 
+ 
+                                              current damping :  1.800
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 251  -1546.2597340620    -5900.1892123     2540.6889627    0.570D-05 0.209D-11
+                             Na = 76.999947617          Nb = 75.999954589    
+                            Exc =  -156.598340813291     N = 152.99990221    
+          Norm of current diis error: 0.67011E-03
+          max. resid. norm for Fia-block=  4.001D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.004D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0014924471 eV 
+ 
+                                              current damping :  1.650
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 252  -1546.2597349822    -5900.1892166     2540.6889660    0.790D-03 0.209D-11
+                             Na = 76.999947628          Nb = 75.999954588    
+                            Exc =  -156.598339161773     N = 152.99990222    
+          Norm of current diis error: 0.64530E-03
+          max. resid. norm for Fia-block=  4.059D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.062D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0015223107 eV 
+ 
+                                              current damping :  1.700
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 253  -1546.2597359633    -5900.1892103     2540.6889588    0.621D-03 0.209D-11
+                             Na = 76.999947640          Nb = 75.999954588    
+                            Exc =  -156.598337193797     N = 152.99990223    
+          Norm of current diis error: 0.62493E-03
+          max. resid. norm for Fia-block=  4.026D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  4.028D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0013934302 eV 
+ 
+                                              current damping :  1.550
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 254  -1546.2597369133    -5900.1892093     2540.6889568    0.138D-04 0.209D-11
+                             Na = 76.999947651          Nb = 75.999954587    
+                            Exc =  -156.598334969638     N = 152.99990224    
+          Norm of current diis error: 0.61066E-03
+          max. resid. norm for Fia-block=  3.914D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.916D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0013470739 eV 
+ 
+                                              current damping :  1.400
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 255  -1546.2597378839    -5900.1891973     2540.6889439    0.136D-02 0.209D-11
+                             Na = 76.999947663          Nb = 75.999954587    
+                            Exc =  -156.598332376244     N = 152.99990225    
+          Norm of current diis error: 0.60071E-03
+          max. resid. norm for Fia-block=  3.766D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.768D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0012961446 eV 
+ density matrices became linear dependent...
+ subr. ddmat can not establish optimal
+ linear combination of delta densities !
+ next fock matrix will be calculated from scratch !
+ 
+                                              current damping :  1.250
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 256  -1546.2597388669    -5900.1891940     2540.6889396    0.136D-02 0.733D-11
+                             Na = 76.999947675          Nb = 75.999954587    
+                            Exc =  -156.598329521910     N = 152.99990226    
+          Norm of current diis error: 0.59435E-03
+          max. resid. norm for Fia-block=  3.568D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.570D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0012330134 eV 
+ 
+                                              current damping :  1.100
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 257  -1546.2597398606    -5900.1891693     2540.6889139    0.146D-02 0.465D-11
+                             Na = 76.999947688          Nb = 75.999954586    
+                            Exc =  -156.598326308379     N = 152.99990227    
+          Norm of current diis error: 0.59178E-03
+          max. resid. norm for Fia-block=  3.310D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.312D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0011565214 eV 
+ 
+                                              current damping :  0.950
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 258  -1546.2597408422    -5900.1891677     2540.6889113    0.117D-04 0.309D-11
+                             Na = 76.999947701          Nb = 75.999954586    
+                            Exc =  -156.598322736286     N = 152.99990229    
+          Norm of current diis error: 0.59393E-03
+          max. resid. norm for Fia-block=  2.945D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.946D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0010000513 eV 
+ 
+                                              current damping :  0.800
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 259  -1546.2597417775    -5900.1891216     2540.6888643    0.579D-05 0.231D-11
+                             Na = 76.999947713          Nb = 75.999954586    
+                            Exc =  -156.598318615532     N = 152.99990230    
+          Norm of current diis error: 0.60405E-03
+          max. resid. norm for Fia-block=  2.422D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.423D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0007156722 eV 
+ 
+                                              current damping :  0.650
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 260  -1546.2597426081    -5900.1891026     2540.6888444    0.370D-04 0.209D-11
+                             Na = 76.999947723          Nb = 75.999954585    
+                            Exc =  -156.598313732793     N = 152.99990231    
+          Norm of current diis error: 0.62894E-03
+          max. resid. norm for Fia-block=  1.790D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  1.791D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0003174600 eV 
+ 
+                                              current damping :  0.500
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 261  -1546.2597432745    -5900.1890374     2540.6887785    0.133D-03 0.209D-11
+                             Na = 76.999947732          Nb = 75.999954585    
+                            Exc =  -156.598307700310     N = 152.99990232    
+          Norm of current diis error: 0.67505E-03
+          max. resid. norm for Fia-block=  1.371D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  1.371D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0002138282 eV 
+ 
+                                              current damping :  0.350
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 262  -1546.2597438318    -5900.1889538     2540.6886945    0.901D-03 0.209D-11
+                             Na = 76.999947739          Nb = 75.999954585    
+                            Exc =  -156.598301129967     N = 152.99990232    
+          Norm of current diis error: 0.72573E-03
+          max. resid. norm for Fia-block=  1.318D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  1.319D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0005668689 eV 
+ 
+                                              current damping :  0.200
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 263  -1546.2597444204    -5900.1888961     2540.6886361    0.131D-04 0.209D-11
+                             Na = 76.999947747          Nb = 75.999954585    
+                            Exc =  -156.598296122366     N = 152.99990233    
+          Norm of current diis error: 0.74977E-03
+          max. resid. norm for Fia-block=  1.439D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  1.440D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0010675958 eV 
+ 
+                                              current damping :  0.250
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 264  -1546.2597451294    -5900.1888984     2540.6886377    0.218D-04 0.209D-11
+                             Na = 76.999947756          Nb = 75.999954585    
+                            Exc =  -156.598295683651     N = 152.99990234    
+          Norm of current diis error: 0.74259E-03
+          max. resid. norm for Fia-block=  2.048D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.051D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0019995477 eV 
+ 
+                                              current damping :  0.100
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 265  -1546.2597460701    -5900.1891160     2540.6888543    0.134D-03 0.209D-11
+                             Na = 76.999947768          Nb = 75.999954584    
+                            Exc =  -156.598301986767     N = 152.99990235    
+          Norm of current diis error: 0.68391E-03
+          max. resid. norm for Fia-block=  3.831D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.836D-04 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0048168179 eV 
+ 
+                                              current damping :  0.150
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 266  -1546.2597479931    -5900.1887338     2540.6884702    0.291D-02 0.209D-11
+                             Na = 76.999947793          Nb = 75.999954583    
+                            Exc =  -156.598299226014     N = 152.99990238    
+          Norm of current diis error: 0.54206E-03
+          max. resid. norm for Fia-block=  3.682D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.684D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0035342619 eV 
+ 
+                                              current damping :  0.200
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 267  -1546.2597497853    -5900.1899399     2540.6896746    0.132D-03 0.209D-11
+                             Na = 76.999947817          Nb = 75.999954582    
+                            Exc =  -156.598283812619     N = 152.99990240    
+          Norm of current diis error: 0.53123E-03
+          max. resid. norm for Fia-block=  3.234D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  3.236D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0034080936 eV 
+ 
+                                              current damping :  0.250
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 268  -1546.2597512765    -5900.1873969     2540.6871301    0.260D-03 0.209D-11
+                             Na = 76.999947836          Nb = 75.999954581    
+                            Exc =  -156.598309993812     N = 152.99990242    
+          Norm of current diis error: 0.57324E-03
+          max. resid. norm for Fia-block=  2.510D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.511D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0020866122 eV 
+ 
+                                              current damping :  0.300
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 269  -1546.2597523946    -5900.1897102     2540.6894422    0.215D-03 0.209D-11
+                             Na = 76.999947855          Nb = 75.999954583    
+                            Exc =  -156.598273572941     N = 152.99990244    
+          Norm of current diis error: 0.56610E-03
+          max. resid. norm for Fia-block=  1.344D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  1.344D-04 for orbital     77a    alpha
+          Delta Eig. =     0.0005393493 eV 
+ density matrices became linear dependent...
+ subr. ddmat can not establish optimal
+ linear combination of delta densities !
+ next fock matrix will be calculated from scratch !
+ 
+                                              current damping :  0.350
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 270  -1546.2597529568    -5900.1890471     2540.6887786    0.215D-03 0.733D-11
+                             Na = 76.999947862          Nb = 75.999954581    
+                            Exc =  -156.598271687437     N = 152.99990244    
+          Norm of current diis error: 0.63568E-03
+          max. resid. norm for Fia-block=  6.333D-05 for orbital     77a    alpha
+          max. resid. fock norm         =  6.339D-05 for orbital     77a    alpha
+ mo-orthogonalization: Cholesky decomposition
+          Delta Eig. =     0.0005271396 eV 
+
+ ENERGY CONVERGED !
+
+ Evaluating v_xc on big grid 
+          Overall gridpoints after grid construction =        241408
+ 
+                                              current damping :  0.400
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ 271  -1546.2595030220    -5900.1889238     2540.6889053    0.429D-03 0.465D-11
+                             Na = 77.000017250          Nb = 76.000018148    
+                            Exc =  -156.598012674232     N = 153.00003540    
+          max. resid. norm for Fia-block=  2.669D-04 for orbital     77a    alpha
+          max. resid. fock norm         =  2.880D-04 for orbital    413a    alpha
+
+ convergence criteria satisfied after   271 iterations
+
+
+                  ------------------------------------------ 
+                 |  total energy      =  -1546.25950302197  |
+                  ------------------------------------------ 
+                 :  kinetic energy    =   1253.28329172732  :
+                 :  potential energy  =  -2799.54279474930  :
+                 :  virial theorem    =      1.81052584594  :
+                 :  wavefunction norm =      1.00000000000  :
+                  .......................................... 
+
+
+ orbitals $uhfmo_beta  will be written to file beta
+
+ orbitals $uhfmo_alpha  will be written to file alpha
+ 
+ alpha: 
+
+    irrep                 73a         74a         75a         76a         77a   
+ eigenvalues H         -0.26904    -0.24655    -0.23735    -0.22217    -0.15407
+            eV          -7.3210     -6.7089     -6.4588     -6.0457     -4.1926
+ occupation              1.0000      1.0000      1.0000      1.0000      1.0000
+
+    irrep                 78a         79a         80a         81a         82a   
+ eigenvalues H         -0.13097    -0.12917    -0.12535    -0.11562    -0.11242
+            eV          -3.5639     -3.5149     -3.4110     -3.1461     -3.0591
+ 
+ beta:  
+
+    irrep                 72a         73a         74a         75a         76a   
+ eigenvalues H         -0.27117    -0.26905    -0.24657    -0.23701    -0.22200
+            eV          -7.3789     -7.3213     -6.7095     -6.4495     -6.0410
+ occupation              1.0000      1.0000      1.0000      1.0000      1.0000
+
+    irrep                 77a         78a         79a         80a         81a   
+ eigenvalues H         -0.11087    -0.10871    -0.10664    -0.10467    -0.10353
+            eV          -3.0169     -2.9582     -2.9018     -2.8483     -2.8172
+ 
+
+                                             _ _ _ 
+  IRREP     alpha occ.     beta occ.      tr(D*D-D)
+
+
+ a         77.00000000    76.00000000    -0.25088784
+
+   -------------------------------------------------
+
+   sum     77.00000000    76.00000000    -0.25088784
+
+ <S*S>     0.75177569
+
+ 
+ 
+ 
+ ==============================================================================
+                           electrostatic moments
+ ==============================================================================
+
+ reference point for electrostatic moments:    0.00000   0.00000   0.00000
+
+ 
+              nuc           elec       ->  total
+ ------------------------------------------------------------------------------
+                          charge      
+ ------------------------------------------------------------------------------
+         153.000000    -153.000000       0.000000
+ a-b                                     1.000000
+ 
+ ------------------------------------------------------------------------------
+                       dipole moment  
+ ------------------------------------------------------------------------------
+   x    -741.439476     744.534080       3.094604
+   y     -15.863752      15.969037       0.105286
+   z      25.565882     -25.751511      -0.185629
+ 
+   | dipole moment | =     3.1020 a.u. =     7.8844 debye 
+ 
+ ------------------------------------------------------------------------------
+                     quadrupole moment
+ ------------------------------------------------------------------------------
+  xx    4786.472306   -4900.002090    -113.529783
+  yy    1870.572358   -1979.325626    -108.753268
+  zz     854.907675    -928.277446     -73.369771
+  xy      75.105526     -77.187050      -2.081525
+  xz    -224.075347     231.137657       7.062310
+  yz     526.810723    -545.445520     -18.634797
+ 
+     1/3  trace=     -98.550941
+     anisotropy=      51.460768
+ 
+ ==============================================================================
+ 
+HOMO-LUMO Separation
+ HOMO         :   -0.15407258 H =     -4.19253 eV
+ LUMO         :   -0.13097041 H =     -3.56389 eV
+ HOMO-LUMO gap:    0.02310217 H =     +0.62864 eV
+ 
+ ==============================================================================
+
+
+    ------------------------------------------------------------------------
+         total  cpu-time :  3 hours 31 minutes and 54 seconds
+         total wall-time : 29 minutes and  0 seconds
+    ------------------------------------------------------------------------
+
+   ****  dscf : all done  ****
+
+
+    2024-03-29 12:28:06.128 
+
+ dscf ended normally

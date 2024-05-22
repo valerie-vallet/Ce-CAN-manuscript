@@ -1,0 +1,24 @@
+# Geometries with other functionals and crystal geometries
+g16-sp-pbe0-tpssh/
+
+# AMS files
+*.ams
+*.pid
+*.results
+*.rkf
+
+# QTAIM subresults
+*_atomicfiles/
+*.extout
+*.txt
+
+# Gaussian checkpoint files
+*.chk*
+
+# Shell scripts
+*.pbs
+*.sh
+*.slurm
+
+# PNG plots
+*.png
