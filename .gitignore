@@ -1,5 +1,10 @@
 # Geometries with other functionals and crystal geometries
 g16-sp-pbe0-tpssh/
+sp-ccsdt-gp/
+sp-mp2-cosmo/
+sp-mp2-gp/
+geom-exp/
+Knope-structure-Ce-dinuclear-outerH2O/
 
 # AMS files
 *.ams
@@ -8,9 +13,12 @@ g16-sp-pbe0-tpssh/
 *.rkf
 
 # QTAIM subresults
+*.wfx
 *_atomicfiles/
 *.extout
 *.txt
+*.g3dviz
+*.mgpviz
 
 # Gaussian checkpoint files
 *.chk*
