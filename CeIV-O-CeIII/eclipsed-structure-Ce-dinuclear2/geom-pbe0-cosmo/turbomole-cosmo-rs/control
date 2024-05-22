@@ -1,0 +1,107 @@
+$cosmo_atoms
+# radii in Angstrom units
+ce 1-2                                                                         \
+   radius=  2.2230
+h  3-14                                                                        \
+   radius=  1.3000
+n  15-20                                                                       \
+   radius=  1.8300
+o  21-45                                                                       \
+   radius=  1.7200
+$cosmo_out file=CeIII-O-CeIV-eclipsed.cosmo
+$cosmo_data file=cosmo_transfer.tmp
+$title
+$operating system unix
+$symmetry c1
+$user-defined bonds    file=coord
+$coord    file=coord
+$optimize
+ internal   off
+ redundant  off
+ cartesian  on
+$atoms
+    basis =def-TZVP
+    jbas  =def-TZVP
+ce 1-2
+    ecp   =ce def-ecp
+$basis    file=basis
+$ecp    file=basis
+$newecp
+$rundimensions
+   dim(fock,dens)=1012312
+   natoms=45
+   nshell=443
+   nbf(CAO)=1420
+   dim(trafo[SAO<-->AO/CAO])=1824
+   rhfshells=2
+   nbf(AO)=1219
+$uhfmo_alpha   file=alpha
+$uhfmo_beta   file=beta
+$uhf
+$scfiterlimit      400
+$thize     0.10000000E-04
+$thime        5
+$scfdamp   start=1.000  step=0.050  min=0.100
+$scfdump
+$scfintunit
+ unit=30       size=0        file=twoint
+$scfdiis
+$maxcor   2000 MiB  per_core
+$drvopt
+   cartesian  on
+   basis      off
+   global     off
+   hessian    on
+   dipole     on
+   nuclear polarizability
+$interconversion  off
+   qconv=1.d-7
+   maxiter=25
+$coordinateupdate
+   dqmax=0.3
+   interpolate  on
+   statistics    5
+$forceupdate
+   ahlrichs numgeo=0  mingeo=3 maxgeo=4 modus=<g|dq> dynamic fail=0.3
+   threig=0.005  reseig=0.005  thrbig=3.0  scale=1.00  damping=0.0
+$forceinit on
+   diag=default
+$forceapprox    file=forceapprox
+$jbas    file=auxbasis
+$denconv     0.10000000E-06
+$freeze
+ implicit core=   49 virt=    0
+$cbas    file=auxbasis
+$ricc2
+  mp2
+$response
+  fop relaxed
+$dft
+    functional   b-p
+    gridsize   m4
+$energy    file=energy
+$grad    file=gradient
+$scfconv   7
+$scforbitalshift  closedshell=.05
+$ricore     2000
+$rij
+$ssquare from ridft
+          0.752 (not to be modified here)
+$charge from ridft
+         -1.000 (not to be modified here)
+$dipole from ridft
+  x     0.69865691466545    y     0.19675211822188    z     0.57899004422669    a.u.
+   | dipole | =    2.3599611347  debye
+$last SCF energy change = 0.24301205E-03
+$alpha shells
+ a       1-158                                  ( 1 )
+$beta shells
+ a       1-157                                  ( 1 )
+$natural orbitals    file=natural
+$natural orbital occupation    file=natural
+$last step     ridft
+$orbital_max_rnorm 0.15673441917829E-04
+$subenergy  Etot         E1                  Ej                Ex                 Ec                 En
+-3167.989519699    -16888.90820850     7940.277614014    -308.9495699630    -12.87405169614     6102.464696442
+$end
+$TMPDIR /state/partition1/vallet/256072.phlam-s-sakura
