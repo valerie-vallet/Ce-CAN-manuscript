@@ -1,0 +1,97 @@
+$cosmo_atoms
+# radii in Angstrom units
+ce 1-2                                                                         \
+   radius=  2.2230
+h  3-14                                                                        \
+   radius=  1.3000
+n  15-20                                                                       \
+   radius=  1.8300
+o  21-45                                                                       \
+   radius=  1.7200
+$cosmo_out file=CeIV-O-CeIV-eclipsed.cosmo
+$cosmo_data file=cosmo_transfer.tmp
+$title
+$operating system unix
+$symmetry c1
+$user-defined bonds    file=coord
+$coord    file=coord
+$optimize
+ internal   off
+ redundant  off
+ cartesian  on
+$atoms
+    basis =def-TZVP
+ce 1-2
+    ecp   =ce def-ecp
+$basis    file=basis
+$ecp    file=basis
+$newecp
+$rundimensions
+   dim(fock,dens)=1012312
+   natoms=45
+   nshell=443
+   nbf(CAO)=1420
+   dim(trafo[SAO<-->AO/CAO])=1824
+   rhfshells=1
+   nbf(AO)=1219
+$scfmo   file=mos
+$scfiterlimit       100
+$thize     0.10000000E-04
+$thime        5
+$scfdamp   start=0.300  step=0.050  min=0.100
+$scfdump
+$scfintunit
+ unit=30       size=0        file=twoint
+$scfdiis
+$maxcor   2000 MiB  per_core
+$scforbitalshift  automatic=.1
+$drvopt
+   cartesian  on
+   basis      off
+   global     off
+   hessian    on
+   dipole     on
+   nuclear polarizability
+$interconversion  off
+   qconv=1.d-7
+   maxiter=25
+$coordinateupdate
+   dqmax=0.3
+   interpolate  on
+   statistics    5
+$forceupdate
+   ahlrichs numgeo=0  mingeo=3 maxgeo=4 modus=<g|dq> dynamic fail=0.3
+   threig=0.005  reseig=0.005  thrbig=3.0  scale=1.00  damping=0.0
+$forceinit on
+   diag=default
+$forceapprox    file=forceapprox
+$denconv     0.10000000E-06
+$freeze
+ implicit core=   49 virt=    0
+$cbas    file=auxbasis
+$ricc2
+  mp2
+$response
+  fop relaxed
+$ricore      500
+$last SCF energy change = 0.81626897E-01
+$subenergy  Etot         E1                  Ej                Ex                 En
+-3153.138399360    -17209.87729685     8071.157223593    -306.4494261626     6292.031100062
+$charge from dscf
+          0.000 (not to be modified here)
+$energy    file=energy
+$grad    file=gradient
+$jbas    file=auxbasis
+$closed shells
+ a       1-157                                  ( 2 )
+$dft
+    functional   b-p
+    gridsize   m4
+$scfconv   7
+$last step     dscf
+$dipole from dscf
+  x    -0.57995699597138    y     0.15044896509265    z    -0.05685847583757    a.u.
+   | dipole | =    1.5297500015  debye
+$orbital_max_rnorm 0.32908771239218E-04
+$end
+$TMPDIR /state/partition2/vallet/259776.phlam-s-sakura

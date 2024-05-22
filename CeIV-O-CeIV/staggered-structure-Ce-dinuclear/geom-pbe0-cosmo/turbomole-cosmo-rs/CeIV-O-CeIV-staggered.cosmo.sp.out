@@ -1,0 +1,377 @@
+
+  ========================================================================
+                license information 
+ Customer : 200000000019588
+ ID       : LKO2306259
+
+ License file is VALID, continuing with full version
+  ========================================================================
+
+   OpenMP run-time library returned nthreads =  8
+ operating system is UNIX !
+
+ dscf (u-0-8.local) : TURBOMOLE rev. V7-7-1 compiled 2 Jan 2023 at 20:18:50
+ Copyright (C) 2023 TURBOMOLE GmbH, Karlsruhe
+
+
+    2024-02-15 15:36:50.792 
+
+
+
+                             d s c f - program
+
+                   idea & directorship : reinhart ahlrichs
+                   program development : marco haeser
+                                         michael baer
+                           dft version : oliver treutler
+
+
+                          quantum chemistry group
+                          universitaet  karlsruhe
+                                  germany
+
+
+
+   *-----------------------------------------------------------------------*
+   |                     program will use  8 thread(s)                     |
+   *-----------------------------------------------------------------------*
+
+
+              +--------------------------------------------------+
+              | Atomic coordinate, charge and isotop information |
+              +--------------------------------------------------+
+
+                    atomic coordinates            atom    charge  isotop
+         -0.44428028    0.47398300   -3.83559792    ce    58.000     0
+          0.47412095   -0.49803543    3.77745483    ce    58.000     0
+          3.13814347   -1.39100095   -8.14784146    h      1.000     0
+         -3.07779884    1.71003585    7.95877058    h      1.000     0
+          0.40506847   -1.45868905   -9.17681624    h      1.000     0
+         -0.35815035    1.67325045    9.02542650    h      1.000     0
+         -5.03986558   -1.40187254   -7.12981009    h      1.000     0
+          5.06131019    1.24511976    7.13501250    h      1.000     0
+         -4.12415154    1.14165726   -8.23105744    h      1.000     0
+          4.04188420   -1.23708465    8.27950813    h      1.000     0
+         -0.87838817    5.69213668   -6.62666673    h      1.000     0
+          0.37937008   -5.64514297    6.69270698    h      1.000     0
+          0.44330707    3.83957768   -8.45473109    h      1.000     0
+         -0.79688050   -3.61794682    8.43930526    h      1.000     0
+          5.28186202   -2.70553791    2.15300656    n      7.000     0
+         -5.44996828    1.93538948   -1.93911602    n      7.000     0
+          0.80564127   -4.91869445   -3.65802413    n      7.000     0
+         -0.01538993    5.00855660    3.59697275    n      7.000     0
+          3.74784282    3.98863550   -2.95393674    n      7.000     0
+         -4.09701129   -3.49789441    2.93033406    n      7.000     0
+          0.07586117    0.03355965   -0.04065935    o      8.000     0
+          3.36114249   -4.01216637    2.71040207    o      8.000     0
+         -3.77697295    3.51911037   -2.57025242    o      8.000     0
+          5.01412562   -0.35439168    2.34485533    o      8.000     0
+         -4.86605802   -0.34755654   -2.22576290    o      8.000     0
+          7.23235986   -3.66248956    1.48109364    o      8.000     0
+         -7.46734352    2.58495071   -1.11115330    o      8.000     0
+          1.56192857   -0.47541730   -8.16387579    o      8.000     0
+         -1.55539201    0.71149134    8.03942220    o      8.000     0
+          2.50998338   -3.26928668   -3.58307193    o      8.000     0
+         -1.93465059    3.61514814    3.53230821    o      8.000     0
+         -1.42760872   -4.08909334   -3.85410779    o      8.000     0
+          2.08340227    3.87327717    3.73651958    o      8.000     0
+          1.25269189   -7.14597669   -3.54568936    o      8.000     0
+         -0.14847011    7.27811579    3.52579055    o      8.000     0
+         -3.54389034   -0.45049937   -7.55336574    o      8.000     0
+          3.52679210    0.34310624    7.52639746    o      8.000     0
+          1.51639940    4.62686216   -2.47031425    o      8.000     0
+         -1.94654264   -4.38169476    2.45194044    o      8.000     0
+          4.02121060    1.79661366   -3.87159909    o      8.000     0
+         -4.12707684   -1.27379825    3.80352927    o      8.000     0
+          5.52439514    5.35753988   -2.57265048    o      8.000     0
+         -6.00923462   -4.67894301    2.58539857    o      8.000     0
+         -0.91421549    3.97740297   -7.24336751    o      8.000     0
+          0.54049002   -3.91230946    7.23331228    o      8.000     0
+ 
+       center of nuclear mass  :    0.01963671   -0.01398015   -0.00506617
+       center of nuclear charge:    0.01854610   -0.01314426   -0.00373794
+
+              +--------------------------------------------------+
+              |               basis set information              |
+              +--------------------------------------------------+
+
+              we will work with the 1s 3p 5d 7f 9g ... basis set
+              ...i.e. with spherical basis functions...
+
+   type   atoms  prim   cont   basis
+   ---------------------------------------------------------------------------
+    ce       2    168     96   def-TZVP   [10s8p5d4f1g|14s13p10d8f1g]
+    h       12      8      6   def-TZVP   [3s1p|5s1p]
+    n        6     34     19   def-TZVP   [5s3p1d|11s6p1d]
+    o       25     34     19   def-TZVP   [5s3p1d|11s6p1d]
+   ---------------------------------------------------------------------------
+   total:   45   1486    853
+   ---------------------------------------------------------------------------
+
+   total number of primitive shells          :   88
+   total number of contracted shells         :  383
+   total number of cartesian basis functions :  930
+   total number of SCF-basis functions       :  853
+
+  number of unique ecp types :    1
+
+ integral neglect threshold       :  0.36E-11
+ integral storage threshold THIZE :  0.10E-04
+ integral storage threshold THIME :         5
+
+
+ DENSITY CONVERGENCE CHECK SWITCHED ON !
+ SCF CONVERGENCE IF RMS(delta[D]) <     0.1000000000E-06
+
+
+ symmetry group of the molecule :   c1 
+
+ the group has the following generators :
+   c1(z)
+
+    1 symmetry operations found
+
+ there are 1 real representations :   a   
+
+ maximum number of shells which are related by symmetry :  1
+
+ ==============================================================================
+                      COSMO switched on
+ ==============================================================================
+ COSMO stati: segments per atom: H   32 other atoms   92
+ COSMO statistics: nps   1313 npspher:    622
+ COSMO surface:
+   number of segments: 1313
+   area (bohr**2):     1343.254747
+   volume (bohr**3):   3571.847426
+ COSMO: check number of disjunct cavities:
+
+       ... OK contiguous cavity found
+  
+           ------------------
+           density functional
+           ------------------
+ B-P86 functional
+ exchange:    LDA + Becke (B88)
+ correlation: LDA (VWN) + Perdew (P86)
+ iterations will be done with small grid
+  
+ spherical integration : Lebedev's spherical grid
+ spherical gridsize    :                     4
+    i.e. gridpoints    :                   434
+  maximum batchsize    :                   100
+ value for diffuse not defined
+ radial integration    : Chebyshev 2nd kind (scaling 3)
+ radial gridsize       :                     6
+ integration cells     :                    45
+ partition function    : becke
+ partition sharpness   :                     3
+  
+
+          ------------------------
+          nuclear repulsion energy  :   6388.18521056    
+          ------------------------
+
+
+         -----------------
+         -S,T+V- integrals
+         -----------------
+
+ 1e-integrals will be neglected if expon. factor < 0.359351E-12
+
+
+          ----------------
+          -ecp-  integrals
+          ----------------
+ 
+ Difference densities algorithm switched on.
+ The maximal number of linear combinations of
+ difference densities is  20.
+
+ DIIS switched on: error vector is FDS-SDF
+ Max. Iterations for DIIS is     :   4
+ DIIS matrix (see manual) 
+    Scaling factor of diagonals  :  1.200
+    threshold for scaling factor :  0.000
+
+ scf convergence criterion : increment of total energy < .1000000D-06
+                  and increment of one-electron energy < .1000000D-03
+
+ MOs are in ASCII format !
+
+
+    mo occupation :
+   irrep   mo's   occupied
+    a      853      157
+ 
+ number of basis functions   :   853
+ number of occupied orbitals :   157
+ 
+
+ reading orbital data $scfmo  from file mos
+ orbital characterization : scfconv=7
+ mo-orthogonalization by Cholesky decomposition
+
+ automatic virtual orbital shift switched on 
+      shift if e(lumo)-e(homo) < 0.10000000    
+
+
+ DSCF restart information will be dumped onto file mos
+
+          Overall gridpoints after grid construction =        144153
+ 
+                                              current damping :  0.300
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
+   1  -3167.9441863298    -17424.119273     7867.9898760    0.000D+00 0.358D-11
+                            Exc =  -321.384532129449     N = 314.00010702    
+                          Ediel =    -0.123054882384
+          max. resid. norm for Fia-block=  2.304D-06 for orbital    151a         
+          max. resid. fock norm         =  5.321D-06 for orbital    853a         
+          irrep a   : virtual orbitals shifted by    0.01400
+          Delta Eig. =     0.0000259191 eV 
+ 
+                                              current damping :  0.300
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
+   2  -3167.9441863268    -17424.119299     7867.9899018    0.615D-07 0.227D-11
+                            Exc =  -321.384546664375     N = 314.00010702    
+                          Ediel =    -0.123054654671
+          Norm of current diis error: 0.14073E-03
+          max. resid. norm for Fia-block=  1.108D-06 for orbital    157a         
+          max. resid. fock norm         =  4.285D-06 for orbital    842a         
+          irrep a   : virtual orbitals shifted by    0.01400
+          Delta Eig. =     0.0001316516 eV 
+
+ ENERGY & DENSITY CONVERGED !
+
+ Evaluating v_xc on big grid 
+          Overall gridpoints after grid construction =        484713
+ 
+                                              current damping :  0.350
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
+   3  -3167.9434589143    -17424.118991     7867.9903216    0.368D-07 0.219D-11
+                            Exc =  -321.383809519043     N = 314.00001878    
+                          Ediel =    -0.123055120102
+          max. resid. norm for Fia-block=  4.463D-06 for orbital    150a         
+          max. resid. fock norm         =  9.137D-06 for orbital    833a         
+
+ convergence criteria satisfied after     3 iterations
+
+
+                  ------------------------------------------ 
+                 |  total energy      =  -3167.94345891434  |
+                  ------------------------------------------ 
+                 :  kinetic energy    =   2574.80469192472  :
+                 :  potential energy  =  -5742.74815083906  :
+                 :  virial theorem    =      1.81276851223  :
+                 :  wavefunction norm =      1.00000000000  :
+                  .......................................... 
+
+
+ orbitals $scfmo  will be written to file mos
+
+    irrep                153a        154a        155a        156a        157a   
+ eigenvalues H         -0.26196    -0.26154    -0.26123    -0.26031    -0.25982
+            eV          -7.1285     -7.1169     -7.1086     -7.0835     -7.0701
+ occupation              2.0000      2.0000      2.0000      2.0000      2.0000
+
+    irrep                158a        159a        160a        161a        162a   
+ eigenvalues H         -0.19366    -0.19359    -0.19323    -0.19316    -0.19251
+            eV          -5.2699     -5.2679     -5.2582     -5.2562     -5.2386
+ 
+ ==============================================================================
+                                  COSMO RESULTS
+ ==============================================================================
+  PARAMETER:
+    nppa:      1082
+    nspa:        92
+    nsph:        32
+    nps:       1313
+    npspher:    622
+    disex:   10.0000    
+    disex2:  3847.17    
+    rsolv [A]: 1.3000
+    routf:     0.8500
+    phsran:    0.0    
+    ampran:   0.10E-04
+    cavity:  closed
+    epsilon: infinity
+    refind:     1.300
+    fepsi:      1.0000000
+  CAVITY VOLUME/AREA [a.u.]:
+    surface: V1.0, A matrix: V1.0
+    area:  1343.25
+    volume:  3571.85
+  SCREENING CHARGE:
+    cosmo      :  -0.027685
+    correction :   0.026771
+    total      :  -0.000914
+  ENERGIES [a.u.]:
+    Total energy            =   -3167.9434589143402
+    Total energy + OC corr. =    -3167.9443465181
+    Dielectric energy       =       -0.1230551201
+    Diel. energy + OC corr. =       -0.1239427239
+  ELEMENT RADIUS [A]: ATOM LIST
+    ce 2.22: 1,2
+    h  1.30: 3-14
+    n  1.83: 15-20
+    o  1.72: 21-45
+ ==============================================================================
+ 
+ 
+ 
+ ==============================================================================
+                           electrostatic moments
+ ==============================================================================
+
+ reference point for electrostatic moments:    0.00000   0.00000   0.00000
+
+ 
+              nuc           elec       ->  total
+ ------------------------------------------------------------------------------
+                          charge      
+ ------------------------------------------------------------------------------
+         314.000000    -314.000000       0.000000
+ 
+ ------------------------------------------------------------------------------
+                       dipole moment  
+ ------------------------------------------------------------------------------
+   x       6.026518      -6.231382      -0.204864
+   y      -4.189908       4.299153       0.109244
+   z       0.244967      -0.298503      -0.053536
+ 
+   | dipole moment | =     0.2383 a.u. =     0.6056 debye 
+ 
+ ------------------------------------------------------------------------------
+                     quadrupole moment
+ ------------------------------------------------------------------------------
+  xx    3440.957607   -3647.539952    -206.582346
+  yy    3434.429613   -3640.135943    -205.706330
+  zz    6091.364277   -6162.816388     -71.452111
+  xy     -44.534930      42.638363      -1.896567
+  xz     331.897209    -315.554844      16.342365
+  yz    -357.512930     340.163442     -17.349488
+ 
+     1/3  trace=    -161.246929
+     anisotropy=     140.916980
+ 
+ ==============================================================================
+ 
+HOMO-LUMO Separation
+ HOMO         :   -0.25981966 H =     -7.07006 eV
+ LUMO         :   -0.19366436 H =     -5.26988 eV
+ HOMO-LUMO gap:    0.06615529 H =     +1.80018 eV
+ 
+ ==============================================================================
+
+
+    ------------------------------------------------------------------------
+         total  cpu-time : 15 minutes and  5 seconds
+         total wall-time :  1 minutes and 56 seconds
+    ------------------------------------------------------------------------
+
+   ****  dscf : all done  ****
+
+
+    2024-02-15 15:38:47.094 
+
+ dscf ended normally
