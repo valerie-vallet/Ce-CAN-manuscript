@@ -19,6 +19,7 @@ Knope-structure-Ce-dinuclear-outerH2O/
 *.txt
 *.g3dviz
 *.mgpviz
+*.sumviz
 
 # Gaussian checkpoint files
 *.chk*
