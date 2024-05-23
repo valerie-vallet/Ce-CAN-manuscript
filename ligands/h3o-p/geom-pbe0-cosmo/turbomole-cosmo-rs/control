@@ -1,0 +1,44 @@
+$cosmo_atoms
+# radii in Angstrom units
+o  1                                                                           \
+   radius=  1.7200
+h  2-4                                                                         \
+   radius=  1.3000
+$cosmo_out file=h3o-p.cosmo
+$cosmo_data file=cosmo_transfer.tmp
+$title
+$symmetry c1
+$coord    file=coord
+$optimize
+ internal   off
+ redundant  off
+ cartesian  on
+$atoms
+    basis =def-TZVP
+$basis    file=basis
+$scfmo   file=mos
+$closed shells
+ a       1-5                                    ( 2 )
+$scfiterlimit       30
+$scfdamp   start=0.300  step=0.050  min=0.100
+$scfdump
+$scfdiis
+$maxcor    500 MiB  per_core
+$scforbitalshift  automatic=.1
+$energy    file=energy
+$grad    file=gradient
+$dft
+    functional   b-p
+    gridsize   m4
+$scfconv   7
+$rundimensions
+   natoms=4
+$last step     dscf
+$last SCF energy change = 0.14882396
+$charge from dscf
+          1.000 (not to be modified here)
+$dipole from dscf
+  x     0.74907546072765    y     1.25580632018165    z    -0.00266235040675    a.u.
+   | dipole | =    3.7166930286  debye
+$orbital_max_rnorm 0.68755845219857E-05
+$end
